@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookNPlay.LoginPage"
+             BackgroundColor="#F4F4F4">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="30,60"
+            VerticalOptions="Center">
+
+            <!-- App Logo -->
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="App logo"
+                HeightRequest="150"
+                HorizontalOptions="Center" />
+
+            <!-- Welcome Text -->
+            <Label
+                Text="Welcome to BookNPlay"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#4CAF50"/>
+
+            <!-- Username Entry -->
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Username"
+                FontSize="18"
+                BackgroundColor="White"
+                TextColor="Black"
+                Margin="0,20,0,0"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand" />
+
+            <!-- Password Entry -->
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                FontSize="18"
+                IsPassword="True"
+                BackgroundColor="White"
+                TextColor="Black"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand"/>
+
+            <!-- Login Button -->
+            <Button
+                x:Name="LoginButton"
+                Text="Login"
+                FontSize="20"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                Clicked="OnLoginClicked"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"/>
+
+            <!-- Forgot Password Label -->
+            <Label
+                Text="Forgot Password?"
+                FontSize="14"
+                TextColor="#007AFF"
+                HorizontalOptions="Center"
+                GestureRecognizers="{TapGestureRecognizer Tapped='OnForgotPasswordTapped'}"/>
+
+            <!-- Sign Up Button -->
+            <Button
+                x:Name="SignUpButton"
+                Text="Sign Up"
+                FontSize="18"
+                BackgroundColor="White"
+                TextColor="#4CAF50"
+                BorderWidth="1"
+                BorderColor="#4CAF50"
+                Clicked="OnSignUpClicked"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"/>
+
+            <!-- Divider for social login options -->
+            <BoxView
+                Color="Gray"
+                HeightRequest="1"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Margin="10,20" />
+
+            <Label
+                Text="Or continue with"
+                FontSize="16"
+                TextColor="Gray"
+                HorizontalOptions="Center" />
+
+            <!-- Social Login Buttons -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+
+                <!-- Google Login -->
+                <Button
+                    Text="Google"
+                    FontSize="16"
+                    BackgroundColor="#DB4437"
+                    TextColor="White"
+                    Clicked="OnGoogleLoginClicked"
+                    HeightRequest="50"
+                    WidthRequest="100"
+                    CornerRadius="10"/>
+
+                <!-- Facebook Login -->
+                <Button
+                    Text="Facebook"
+                    FontSize="16"
+                    BackgroundColor="#4267B2"
+                    TextColor="White"
+                    Clicked="OnFacebookLoginClicked"
+                    HeightRequest="50"
+                    WidthRequest="100"
+                    CornerRadius="10"/>
+
+                <!-- Apple Login -->
+                <Button
+                    Text="Apple"
+                    FontSize="16"
+                    BackgroundColor="#000000"
+                    TextColor="White"
+                    Clicked="OnAppleLoginClicked"
+                    HeightRequest="50"
+                    WidthRequest="100"
+                    CornerRadius="10"/>
+
+            </HorizontalStackLayout>
+
+            <!-- Feedback Label -->
+            <Label
+                x:Name="FeedbackLabel"
+                Text=""
+                FontSize="16"
+                TextColor="Red"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
