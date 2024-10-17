@@ -13,7 +13,7 @@ namespace BookNPlay
         // Handle login button click
         private void OnLoginClicked(object sender, EventArgs e)
         {
-            string username = UsernameEntry.Text;
+            string username = EmailEntry.Text;
             string password = PasswordEntry.Text;
 
             // Simple validation logic
@@ -39,7 +39,7 @@ namespace BookNPlay
         private void OnSignUpClicked(object sender, EventArgs e)
         {
             // Navigate to sign up page or trigger sign-up logic
-            // Navigation.PushAsync(new SignUpPage()); // Example navigation
+            Navigation.PushAsync(new SignUpPage()); // Example navigation
         }
 
         // Handle Google login click
