@@ -27,8 +27,8 @@
 
             <!-- Username Entry -->
             <Entry
-                x:Name="UsernameEntry"
-                Placeholder="Username"
+                x:Name="EmailEntry"
+                Placeholder="Emailname"
                 FontSize="18"
                 BackgroundColor="White"
                 TextColor="Black"
