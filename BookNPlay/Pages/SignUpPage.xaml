@@ -25,7 +25,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
-                Text="{Binding Username}"
+                Text="{Binding User.Username}"
                 HorizontalOptions="FillAndExpand"
                 Margin="0,20,0,0"/>
 
@@ -36,7 +36,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
-                Text="{Binding Email}"
+                Text="{Binding User.Email}"
                 HorizontalOptions="FillAndExpand" />
 
             <!-- Password Entry -->
@@ -47,7 +47,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
-                Text="{Binding Password}"
+                Text="{Binding User.Password}"
                 HorizontalOptions="FillAndExpand"/>
 
             <!-- Confirm Password Entry -->
@@ -58,7 +58,7 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
-                Text="{Binding ConfirmPassword}"
+                Text="{Binding User.ConfirmPassword}"
                 HorizontalOptions="FillAndExpand"/>
 
             <!-- Sign Up Button -->
