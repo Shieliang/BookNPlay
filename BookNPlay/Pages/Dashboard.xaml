@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookNPlay.Pages.Dashboard"
+             BackgroundColor="#FFFFFF">
+
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="30"
+        VerticalOptions="Center">
+
+        <!-- Welcome Label -->
+        <Label
+            Text="Welcome to the Dashboard!"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#4CAF50"/>
+
+        <!-- Instructions Label -->
+        <Label
+            Text="You're successfully logged in."
+            FontSize="18"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+
+        <!-- Logout Button -->
+        <Button
+            x:Name="LogoutButton"
+            Text="Logout"
+            FontSize="20"
+            BackgroundColor="#4CAF50"
+            TextColor="White"
+            Clicked="OnLogoutClicked"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            CornerRadius="10"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
