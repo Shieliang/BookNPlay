@@ -5,6 +5,7 @@ using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Controls;
 using BookNPlay.Models;
 using Firebase.Auth;
+using System.Diagnostics;
 
 namespace BookNPlay.ViewModels
 {
@@ -35,6 +36,7 @@ namespace BookNPlay.ViewModels
 
         private async void OnSignUp()
         {
+            
             // Validation logic
             if (string.IsNullOrWhiteSpace(User.Username) || string.IsNullOrWhiteSpace(User.Email) ||
                 string.IsNullOrWhiteSpace(User.Password) || string.IsNullOrWhiteSpace(User.ConfirmPassword))
