@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Maui.Controls;
 
-namespace BookNPlay
+namespace BookNPlay.Pages
 {
     public partial class LoginPage : ContentPage
     {

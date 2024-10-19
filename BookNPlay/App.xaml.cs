@@ -7,5 +7,8 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new AppShell();
-	}
+
+        // Navigate to the LoginPage when the app starts
+        Shell.Current.GoToAsync("//LoginPage");
+    }
 }

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BookNPlay.SignUpPage"
+             xmlns:local="clr-namespace:BookNPlay.ViewModels"
+             x:Class="BookNPlay.Pages.SignUpPage"
              BackgroundColor="#F4F4F4"
              Title="SignUpPage">
+    
+    <ContentPage.BindingContext>
+        <local:SignUpViewModel/>
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
@@ -11,91 +16,78 @@
             Padding="30,60"
             VerticalOptions="Center">
 
-            <!-- App Logo -->
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="App logo"
-                HeightRequest="150"
-                HorizontalOptions="Center" />
-
-            <!-- Welcome Text -->
-            <Label
-                Text="Create Your Account"
-                FontSize="28"
-                FontAttributes="Bold"
-                HorizontalOptions="Center"
-                TextColor="#4CAF50"/>
+            <!-- UI elements remain unchanged, but bind to the ViewModel -->
 
             <!-- Full Name Entry -->
             <Entry
-                x:Name="UsernameEntry"
                 Placeholder="Username"
                 FontSize="18"
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
+                Text="{Binding Username}"
                 HorizontalOptions="FillAndExpand"
                 Margin="0,20,0,0"/>
 
             <!-- Email Entry -->
             <Entry
-                x:Name="EmailEntry"
                 Placeholder="Email Address"
                 FontSize="18"
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
+                Text="{Binding Email}"
                 HorizontalOptions="FillAndExpand" />
 
             <!-- Password Entry -->
             <Entry
-                x:Name="PasswordEntry"
                 Placeholder="Password"
                 FontSize="18"
                 IsPassword="True"
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
+                Text="{Binding Password}"
                 HorizontalOptions="FillAndExpand"/>
 
             <!-- Confirm Password Entry -->
             <Entry
-                x:Name="ConfirmPasswordEntry"
                 Placeholder="Confirm Password"
                 FontSize="18"
                 IsPassword="True"
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
+                Text="{Binding ConfirmPassword}"
                 HorizontalOptions="FillAndExpand"/>
 
             <!-- Sign Up Button -->
             <Button
-                x:Name="SignUpButton"
                 Text="Sign Up"
                 FontSize="20"
                 BackgroundColor="#4CAF50"
                 TextColor="White"
-                Clicked="OnSignUpClicked"
                 HeightRequest="50"
+                Command="{Binding SignUpCommand}"
                 HorizontalOptions="FillAndExpand"
                 CornerRadius="10"/>
-
-            <!-- Already have an account Label -->
+            
             <Label
                 Text="Already have an account?"
                 FontSize="14"
                 TextColor="#007AFF"
-                HorizontalOptions="Center"
-                GestureRecognizers="{TapGestureRecognizer Tapped='OnLoginTapped'}"/>
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
 
             <!-- Feedback Label -->
             <Label
-                x:Name="FeedbackLabel"
-                Text=""
                 FontSize="16"
-                TextColor="Red"
-                HorizontalOptions="Center"/>
+                TextColor="{Binding FeedbackColor}"
+                HorizontalOptions="Center"
+                Text="{Binding Feedback}"/>
 
         </VerticalStackLayout>
     </ScrollView>
