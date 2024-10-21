@@ -28,13 +28,14 @@
             <!-- Username Entry -->
             <Entry
                 x:Name="EmailEntry"
-                Placeholder="Emailname"
+                Placeholder="Email"
                 FontSize="18"
                 BackgroundColor="White"
                 TextColor="Black"
                 Margin="0,20,0,0"
                 HeightRequest="40"
-                HorizontalOptions="FillAndExpand" />
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding Email}" />
 
             <!-- Password Entry -->
             <Entry
@@ -45,7 +46,8 @@
                 BackgroundColor="White"
                 TextColor="Black"
                 HeightRequest="40"
-                HorizontalOptions="FillAndExpand"/>
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding Password}" />
 
             <!-- Login Button -->
             <Button
@@ -54,7 +56,7 @@
                 FontSize="20"
                 BackgroundColor="#4CAF50"
                 TextColor="White"
-                Clicked="OnLoginClicked"
+                Command="{Binding LoginCommand}"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
                 CornerRadius="10"/>
@@ -64,8 +66,11 @@
                 Text="Forgot Password?"
                 FontSize="14"
                 TextColor="#007AFF"
-                HorizontalOptions="Center"
-                GestureRecognizers="{TapGestureRecognizer Tapped='OnForgotPasswordTapped'}"/>
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
 
             <!-- Sign Up Button -->
             <Button
@@ -76,69 +81,69 @@
                 TextColor="#4CAF50"
                 BorderWidth="1"
                 BorderColor="#4CAF50"
-                Clicked="OnSignUpClicked"
+                Command="{Binding NavigateToSignUpCommand}" 
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
                 CornerRadius="10"/>
 
-            <!-- Divider for social login options -->
-            <BoxView
+                <!-- Divider for social login options -->
+                <BoxView
                 Color="Gray"
                 HeightRequest="1"
                 WidthRequest="200"
                 HorizontalOptions="Center"
                 Margin="10,20" />
 
-            <Label
+                <Label
                 Text="Or continue with"
                 FontSize="16"
                 TextColor="Gray"
                 HorizontalOptions="Center" />
 
-            <!-- Social Login Buttons -->
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+                <!-- Social Login Buttons -->
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
 
-                <!-- Google Login -->
+                    <!-- Google Login -->
                 <Button
                     Text="Google"
                     FontSize="16"
                     BackgroundColor="#DB4437"
                     TextColor="White"
-                    Clicked="OnGoogleLoginClicked"
+                    Command="{Binding GoogleLoginCommand}" 
                     HeightRequest="50"
                     WidthRequest="100"
                     CornerRadius="10"/>
 
-                <!-- Facebook Login -->
-                <Button
+                    <!-- Facebook Login -->
+                    <Button
                     Text="Facebook"
                     FontSize="16"
                     BackgroundColor="#4267B2"
                     TextColor="White"
-                    Clicked="OnFacebookLoginClicked"
+                    Command="{Binding FacebookLoginCommand}"
                     HeightRequest="50"
                     WidthRequest="100"
                     CornerRadius="10"/>
 
-                <!-- Apple Login -->
-                <Button
+                    <!-- Apple Login -->
+                    <Button
                     Text="Apple"
                     FontSize="16"
                     BackgroundColor="#000000"
                     TextColor="White"
-                    Clicked="OnAppleLoginClicked"
+                    Command="{Binding AppleLoginCommand}"
                     HeightRequest="50"
                     WidthRequest="100"
                     CornerRadius="10"/>
 
-            </HorizontalStackLayout>
+                </HorizontalStackLayout>
 
-            <!-- Feedback Label -->
-            <Label
+                <!-- Feedback Label -->
+                <Label
                 x:Name="FeedbackLabel"
-                Text=""
+                Text="{Binding Feedback}"
                 FontSize="16"
-                TextColor="Red"
+                TextColor="{Binding FeedbackColor}"
                 HorizontalOptions="Center"/>
 
         </VerticalStackLayout>

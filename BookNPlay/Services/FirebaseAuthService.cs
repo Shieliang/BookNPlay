@@ -64,6 +64,34 @@ namespace BookNPlay.Services
             var responseBody = await response.Content.ReadAsStringAsync();
             Console.WriteLine("Email verification link sent: " + responseBody);
         }
+
+        
+        public async Task<string> SignInWithEmailAndPassword(string email, string password)
+        {
+            var signInUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCwIbdvQceBlvfXzHggcy3WOnQcojyQdWA"; // Replace with your API key
+
+            var requestBody = new
+            {
+                email,
+                password,
+                returnSecureToken = true
+            };
+
+            var json = JsonConvert.SerializeObject(requestBody);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync(signInUrl, content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var responseBody = await response.Content.ReadAsStringAsync();
+                throw new Exception($"Error: {response.StatusCode}, Details: {responseBody}");
+            }
+
+            var responseBodySuccess = await response.Content.ReadAsStringAsync();
+            return responseBodySuccess; // This contains the user's token and other info
+        }
+
     }
 
 }

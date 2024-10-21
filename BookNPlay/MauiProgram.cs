@@ -16,16 +16,6 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		builder.Services.AddSingleton(new FirebaseAuthClient(new FirebaseAuthConfig()
-		{
-			ApiKey = "AIzaSyCwIbdvQceBlvfXzHggcy3WOnQcojyQdWA",
-			AuthDomain = "booknplay-88fd2.firebaseapp.com",
-            Providers = new FirebaseAuthProvider[] 
-			{
-				new EmailProvider()
-			}
-		}));
-
 		return builder.Build();
 	}
 }
