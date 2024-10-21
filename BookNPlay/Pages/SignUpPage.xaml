@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BookNPlay.ViewModels"
              x:Class="BookNPlay.Pages.SignUpPage"
              BackgroundColor="#F4F4F4"
              Title="SignUpPage">
-    
+
     <ContentPage.BindingContext>
         <local:SignUpViewModel/>
     </ContentPage.BindingContext>
@@ -16,9 +15,7 @@
             Padding="30,60"
             VerticalOptions="Center">
 
-            <!-- UI elements remain unchanged, but bind to the ViewModel -->
-
-            <!-- Full Name Entry -->
+            <!-- Username Entry -->
             <Entry
                 Placeholder="Username"
                 FontSize="18"
@@ -28,6 +25,10 @@
                 Text="{Binding User.Username}"
                 HorizontalOptions="FillAndExpand"
                 Margin="0,20,0,0"/>
+            <Label Text="Required: 1-20 characters." 
+                   FontSize="12" 
+                   TextColor="Gray" 
+                   HorizontalOptions="Start" />
 
             <!-- Email Entry -->
             <Entry
@@ -38,6 +39,10 @@
                 HeightRequest="40"
                 Text="{Binding User.Email}"
                 HorizontalOptions="FillAndExpand" />
+            <Label Text="Required: Valid email format." 
+                   FontSize="12" 
+                   TextColor="Gray" 
+                   HorizontalOptions="Start" />
 
             <!-- Password Entry -->
             <Entry
@@ -49,6 +54,10 @@
                 HeightRequest="40"
                 Text="{Binding User.Password}"
                 HorizontalOptions="FillAndExpand"/>
+            <Label Text="Required: Min 6 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special character." 
+                   FontSize="12" 
+                   TextColor="Gray" 
+                   HorizontalOptions="Start" />
 
             <!-- Confirm Password Entry -->
             <Entry
@@ -60,6 +69,10 @@
                 HeightRequest="40"
                 Text="{Binding User.ConfirmPassword}"
                 HorizontalOptions="FillAndExpand"/>
+            <Label Text="Required: Must match password." 
+                   FontSize="12" 
+                   TextColor="Gray" 
+                   HorizontalOptions="Start" />
 
             <!-- Sign Up Button -->
             <Button
@@ -71,7 +84,7 @@
                 Command="{Binding SignUpCommand}"
                 HorizontalOptions="FillAndExpand"
                 CornerRadius="10"/>
-            
+
             <Label
                 Text="Already have an account?"
                 FontSize="14"
@@ -91,5 +104,4 @@
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
