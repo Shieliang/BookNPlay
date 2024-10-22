@@ -13,10 +13,56 @@
         <VerticalStackLayout
             Spacing="20"
             Padding="30,60"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+           
+            <!-- Header -->
+            <Label Text ="Create A User Account"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#333"
+                   HorizontalOptions="Center" />
+            
+            <!-- Separator -->
+            <BoxView HeightRequest="1"
+                     BackgroundColor="#E0E0E0"
+                     HorizontalOptions="FillAndExpand"/>
 
-            <!-- Username Entry -->
-            <Entry
+            <!-- Username Entry with Icon-->
+            <HorizontalStackLayout
+                Padding="10"
+                Spacing="10"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                >
+                <Image Source="username_icon.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       VerticalOptions="Center" />
+                <Frame HasShadow="False"
+                       CornerRadius="10"
+                       BorderColor="#CCCCCC"
+                       Padding="0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand"
+                       HeightRequest="50"
+                       BackgroundColor="White">
+                    <Entry Placeholder="Username"
+                       FontSize="18"
+                       BackgroundColor="Transparent"
+                       TextColor="Black"
+                       Text="{Binding User.Username}"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+                </Frame>
+            </HorizontalStackLayout>
+            
+            <Label Text="Required: 1-20 characters."
+                   FontSize="12"
+                   TextColor="Gray"
+                   HorizontalOptions="Start" />
+            
+            <!-- <Entry
                 Placeholder="Username"
                 FontSize="18"
                 BackgroundColor="White"
@@ -28,7 +74,7 @@
             <Label Text="Required: 1-20 characters." 
                    FontSize="12" 
                    TextColor="Gray" 
-                   HorizontalOptions="Start" />
+                   HorizontalOptions="Start" /> -->
 
             <!-- Email Entry -->
             <Entry
