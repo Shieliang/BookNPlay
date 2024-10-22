@@ -50,6 +50,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bnplogo.png" />
 	  <None Remove="Resources\Images\username_icon.png" />
 	</ItemGroup>
 
