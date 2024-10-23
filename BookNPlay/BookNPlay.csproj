@@ -50,7 +50,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\apicon.png.png" />
 	  <None Remove="Resources\Images\bnplogo.png" />
+	  <None Remove="Resources\Images\fbicon.png.png" />
+	  <None Remove="Resources\Images\ggicon.png.png" />
 	  <None Remove="Resources\Images\username_icon.png" />
 	</ItemGroup>
 

@@ -103,39 +103,46 @@
             <!-- Social Login Buttons -->
             <HorizontalStackLayout Spacing="20" Padding="10">
 
-                <!-- Google Button -->
-                <Button Text="&#xf1a0; Continue With Google"
-                    FontFamily="FontAwesomeBrands"
-                    FontSize="20"
-                    BackgroundColor="#02347e"
-                    TextColor="White"
-                    CornerRadius="25"
-                    HorizontalOptions="Center"
-                    Command="{Binding GoogleLoginCommand}"
-                    VerticalOptions="Center" />
+                <!-- Continue with Facebook Button -->
+                <Button Text="Continue With Facebook"
+            TextColor="Black"
+            FontSize="18"
+            BackgroundColor="White"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            ImageSource="fbicon.png"
+            ContentLayout="Left, 10"
+            Command="{Binding FacebookLoginCommand}"
+            CornerRadius="25" />
 
-                <!-- Facebook Button -->
-                <Button Text="&#xf09a; Continue With Facebook"
-                    FontFamily="FontAwesomeBrands"
-                    FontSize="20"
-                    BackgroundColor="#02347e"
-                    TextColor="White"
-                    CornerRadius="25"
-                    HorizontalOptions="Center"
-                    Command="{Binding FacebookLoginCommand}"
-                    VerticalOptions="Center" />
+                <!-- Continue with Google Button -->
+                <Button Text="Continue With Google"
+            TextColor="Black"
+            FontSize="18"
+            BackgroundColor="White"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            ImageSource="ggicon.png"
+            ContentLayout="Left, 10"
+            Command="{Binding GoogleLoginCommand}"
+            CornerRadius="25" />
 
-                <!-- Apple Button -->
-                <Button Text="&#xf179; Continue With Apple"
-                    FontFamily="FontAwesomeBrands"
-                    FontSize="20"
-                    BackgroundColor="#02347e"
-                    TextColor="White"
-                    CornerRadius="25"
-                    HorizontalOptions="Center"
-                    Command="{Binding AppleLoginCommand}"
-                    VerticalOptions="Center" />
+                <!-- Continue with Apple Button -->
+                <Button Text="Continue With Apple"
+            TextColor="Black"
+            FontSize="18"
+            BackgroundColor="White"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            ImageSource="apicon.png"
+            ContentLayout="Left, 10"
+            Command="{Binding AppleLoginCommand}"
+            CornerRadius="25" />
 
+                <!-- Separator -->
+                <BoxView HeightRequest="2"
+             BackgroundColor="White"
+             HorizontalOptions="FillAndExpand" />
             </HorizontalStackLayout>
 
             <!-- Feedback Label -->
