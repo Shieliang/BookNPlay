@@ -8,6 +8,7 @@ namespace BookNPlay.Pages
     public partial class LoginPage : ContentPage
     {
         private LoginViewModel viewModel;
+
         public LoginPage()
         {
             InitializeComponent();
@@ -15,6 +16,17 @@ namespace BookNPlay.Pages
             BindingContext = viewModel;
         }
 
-       
+        // Event handler for the button tap animation
+        private async void OnLoginButtonTapped(object sender, EventArgs e)
+        {
+            // This method will handle the tap animation
+            var button = (Button)sender;
+            await button.ScaleTo(0.95, 50);  // Shrink the button slightly
+            await button.ScaleTo(1, 50);     // Reset the button size
+
+            // Optionally: You can trigger the actual login logic here, or leave it to your ViewModel
+            Debug.WriteLine("Login button tapped!");
+        }
     }
 }
+

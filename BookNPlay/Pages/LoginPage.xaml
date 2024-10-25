@@ -2,37 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookNPlay.Pages.LoginPage"
-             BackgroundColor="#ffffff">
+             BackgroundColor="White">
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="20"
-            Padding="30,60"
-            VerticalOptions="Center">
+            Padding="30" 
+            Spacing="20" 
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="Center">
 
             <!-- App Logo -->
             <Image
                 Source="bnplogo.png"
                 SemanticProperties.Description="App logo"
-                HeightRequest="500"
+                HeightRequest="300"
                 HorizontalOptions="Center" />
 
-            <!-- Welcome Text -->
+            <!-- Welcome Text with Neon Animation Triggered in Code-Behind -->
             <Label
-                Text="Play Like a Pro, Book Like a Boss"
+                x:Name="WelcomeLabel"
+                Text="Book N' Play"
+                FontFamily="Montserrat"
                 FontSize="28"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
-                TextColor="#02347e"/>
+                TextColor="#001f3f" />
 
             <!-- Username Entry -->
             <Entry
                 x:Name="EmailEntry"
                 Placeholder="Email"
                 FontSize="18"
-                BackgroundColor="White"
-                TextColor="Black"
-                Margin="0,20,0,0"
+                BackgroundColor="Transparent" 
+                TextColor="#001f3f"
                 HeightRequest="40"
                 HorizontalOptions="FillAndExpand"
                 Text="{Binding Email}" />
@@ -43,8 +45,8 @@
                 Placeholder="Password"
                 FontSize="18"
                 IsPassword="True"
-                BackgroundColor="White"
-                TextColor="Black"
+                BackgroundColor="Transparent" 
+                TextColor="#001f3f"
                 HeightRequest="40"
                 HorizontalOptions="FillAndExpand"
                 Text="{Binding Password}" />
@@ -54,18 +56,30 @@
                 x:Name="LoginButton"
                 Text="Login"
                 FontSize="20"
-                BackgroundColor="#02347e"
+                FontFamily= "Roboto" 
                 TextColor="White"
                 Command="{Binding LoginCommand}"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
-                CornerRadius="10"/>
+                CornerRadius="10" >
+                <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#001f3f" Offset="0.0" />
+                        <GradientStop Color="#48997e" Offset="1.0" />
+                </LinearGradientBrush>
+                </Button.Background>
+
+                <!-- Animate the button on click -->
+                <Button.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginButtonTapped"/>
+                </Button.GestureRecognizers>
+             </Button>
 
             <!-- Forgot Password Label -->
             <Label
                 Text="Forgot Password?"
                 FontSize="14"
-                TextColor="#476ed7"
+                TextColor="#48997e"
                 HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
@@ -77,72 +91,79 @@
                 x:Name="SignUpButton"
                 Text="Sign Up"
                 FontSize="18"
-                BackgroundColor="White"
-                TextColor="#02347e"
+                FontFamily= "Roboto" 
+                BackgroundColor="Transparent"
+                TextColor="Black"
                 BorderWidth="1"
-                BorderColor="#02347e"
+                BorderColor="#3b5998"
                 Command="{Binding NavigateToSignUpCommand}" 
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
-                CornerRadius="10"/>
+                CornerRadius="10" />
 
             <!-- Divider for social login options -->
-            <BoxView
-                Color="Gray"
-                HeightRequest="1"
-                WidthRequest="200"
-                HorizontalOptions="Center"
-                Margin="10,20" />
+            <Grid Padding="0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </Grid>
 
-            <Label
-                Text="Or"
-                FontSize="16"
-                TextColor="Gray"
-                HorizontalOptions="Center" />
+            <!-- Moved 'or' below the line -->
+            <Label Text="or"
+               FontSize="16"
+                   FontFamily= "Roboto" 
+               TextColor="#48997e"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               WidthRequest="40" />
 
             <!-- Social Login Buttons -->
             <HorizontalStackLayout Spacing="20" Padding="10">
 
                 <!-- Continue with Facebook Button -->
                 <Button Text="Continue With Facebook"
-            TextColor="Black"
-            FontSize="18"
-            BackgroundColor="White"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand"
-            ImageSource="fbicon.png"
-            ContentLayout="Left, 10"
-            Command="{Binding FacebookLoginCommand}"
-            CornerRadius="25" />
+                    TextColor="Black"
+                    FontSize="14"
+                    FontFamily= "Roboto" 
+                    BackgroundColor="Transparent"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"
+                    ImageSource="fbicon.png"
+                    ContentLayout="Left, 10"
+                    Command="{Binding FacebookLoginCommand}"
+                    BorderColor="#3b5998"
+                    CornerRadius="25" />
 
                 <!-- Continue with Google Button -->
                 <Button Text="Continue With Google"
-            TextColor="Black"
-            FontSize="18"
-            BackgroundColor="White"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand"
-            ImageSource="ggicon.png"
-            ContentLayout="Left, 10"
-            Command="{Binding GoogleLoginCommand}"
-            CornerRadius="25" />
+                    TextColor="Black"
+                    FontSize="14"
+                    FontFamily= "Roboto" 
+                    BackgroundColor="Transparent"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"
+                    ImageSource="ggicon.png"
+                    ContentLayout="Left, 10"
+                    Command="{Binding GoogleLoginCommand}"
+                    BorderColor="#3b5998"
+                    CornerRadius="25" />
 
                 <!-- Continue with Apple Button -->
                 <Button Text="Continue With Apple"
-            TextColor="Black"
-            FontSize="18"
-            BackgroundColor="White"
-            HeightRequest="50"
-            HorizontalOptions="FillAndExpand"
-            ImageSource="apicon.png"
-            ContentLayout="Left, 10"
-            Command="{Binding AppleLoginCommand}"
-            CornerRadius="25" />
+                    TextColor="Black"
+                    FontSize="14"
+                    FontFamily= "Roboto" 
+                    BackgroundColor="Transparent"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand"
+                    ImageSource="apicon.png"
+                    ContentLayout="Left, 10"
+                    Command="{Binding AppleLoginCommand}"
+                    BorderColor="#3b5998"
+                    CornerRadius="25" />
 
                 <!-- Separator -->
                 <BoxView HeightRequest="2"
-             BackgroundColor="White"
-             HorizontalOptions="FillAndExpand" />
+                    BackgroundColor="White"
+                    HorizontalOptions="FillAndExpand" />
             </HorizontalStackLayout>
 
             <!-- Feedback Label -->
@@ -152,8 +173,11 @@
                 FontSize="16"
                 TextColor="{Binding FeedbackColor}"
                 HorizontalOptions="Center"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
+
+
+
+
+
