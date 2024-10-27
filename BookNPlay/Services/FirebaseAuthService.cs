@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace BookNPlay.Services
 {
@@ -14,10 +16,12 @@ namespace BookNPlay.Services
         private const string FirebaseSignInUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCwIbdvQceBlvfXzHggcy3WOnQcojyQdWA";
 
         private readonly HttpClient _httpClient;
+        private readonly TokenService _tokenService;
 
         public FirebaseAuthService()
         {
             _httpClient = new HttpClient();
+            _tokenService = new TokenService(); // Initialize here
         }
 
         // Sign up a new user
@@ -90,9 +94,11 @@ namespace BookNPlay.Services
             var responseBodySuccess = await response.Content.ReadAsStringAsync();
             var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBodySuccess);
 
-            // Extract ID token for verifying email
             if (responseData.TryGetValue("idToken", out var idToken))
             {
+                // Store the token securely
+                _tokenService.StoreToken(idToken.ToString());
+
                 // Check email verification status
                 var emailVerified = await IsEmailVerified(idToken.ToString());
                 if (!emailVerified)
