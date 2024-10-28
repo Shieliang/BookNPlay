@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BookNPlay.ViewModels"
@@ -12,110 +13,131 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="20"
-            Padding="30,60"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand">
+            Padding="30"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center">
 
-            <!-- Header -->
-            <Label Text ="Create A User Account"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="#02347e"
-                   HorizontalOptions="Center" />
+            <!-- App Logo -->
+            <Image 
+                Source="bnplogo.png" 
+                SemanticProperties.Description="App logo"
+                HeightRequest="300"
+                HorizontalOptions="Center"
+                />
+
+            <!-- Welcome Text -->
+            <Label 
+                x:Name="WelcomeLabel"
+                Text ="Create A User Account"
+                FontFamily="Montserrat"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#001f3f"
+                HorizontalOptions="Center" />
+            
             <!-- Username Entry -->
-            <Entry Placeholder="Username"
-                   FontSize="18"
-                   Background="White"
-                   TextColor="Black"
-                   HeightRequest="50"
-                   Margin="0,10,0,0"
-                   Text="{Binding User.Username}"
-                   PlaceholderColor="Gray"
-                   HorizontalOptions="FillAndExpand" />
+            <Entry 
+                x:Name="UsernameEntry"
+                Placeholder="Username"
+                FontSize="18"
+                BackgroundColor="Transparent"
+                TextColor="#001f3f"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,10,0,0"
+                Text="{Binding User.Username}" />
             <Label Text="Required: 1-20 characters. " 
                    FontSize="12"
                    TextColor="Gray"
                    HorizontalOptions="Start"/>
 
             <!-- Email Entry -->
-            <Entry Placeholder="Email Address"
-                   FontSize="18"
-                   BackgroundColor="White"
-                   TextColor="Black"
-                   HeightRequest="50"
-                   Margin="0,10,0,0"
-                   Text="{Binding User.Email}"
-                   PlaceholderColor="Gray"
-                   HorizontalOptions="FillAndExpand"/>
-            <Label Text="Required: Min 6 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special character."
+            <Entry 
+                x:Name="EmailEntry"
+                Placeholder="Email"
+                FontSize="18"
+                BackgroundColor="Transparent"
+                TextColor="#001f3f"
+                HeightRequest="40"
+                Text="{Binding User.Email}"
+                PlaceholderColor="Gray"
+                HorizontalOptions="FillAndExpand"/>
+            <Label Text="Required: Valid email format."
                    FontSize="12"
                    TextColor="Gray"
-                   HorizontalOptions="Start"
-                   />
+                   HorizontalOptions="Start"/>
 
             <!-- Password Entry -->
-            <Entry Placeholder="Password"
-                   FontSize="18"
-                   IsPassword="True"
-                   BackgroundColor="White"
-                   TextColor="Black"
-                   HeightRequest="50"
-                   Margin="0,10,0,0"
-                   Text="{Binding User.Password}"
-                   PlaceholderColor="Gray"
-                   HorizontalOptions="FillAndExpand"
-                   />
+            <Entry 
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                FontSize="18"
+                IsPassword="True"
+                BackgroundColor="Transparent"
+                TextColor="#001f3f"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding User.Password}"
+                PlaceholderColor="Gray"/>
             <Label Text="Required:Min 6 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special character."
                    FontSize="12"
                    TextColor="Gray"
-                   HorizontalOptions="Start"
-                   />
+                   HorizontalOptions="Start"/>
 
             <!-- Confirm Password Entry -->
-            <Entry Placeholder="Confirm Password"
-                   FontSize="18"
-                   IsPassword="True"
-                   BackgroundColor="White"
-                   TextColor="Black"
-                   HeightRequest="50"
-                   Margin="0,10,0,0"
-                   Text="{Binding User.ConfirmPassword}"
-                   PlaceholderColor="Gray"
-                   HorizontalOptions="FillAndExpand"/>
+            <Entry 
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="Confirm Password"
+                FontSize="18"
+                IsPassword="True"
+                BackgroundColor="Transparent"
+                TextColor="#001f3f"
+                HeightRequest="40"
+                HorizontalOptions="FillAndExpand"
+                Text="{Binding User.ConfirmPassword}"
+                PlaceholderColor="Gray"/>
             <Label Text="Required: Must match password"
                    FontSize="12"
                    TextColor="Gray"
-                   HorizontalOptions="Start"
-                   />
+                   HorizontalOptions="Start"/>
 
             <!-- Sign Up Button -->
-            <Button Text="Sign Up"
-                    FontSize="18"
-                    BackgroundColor="#1D4ED8" 
-                    TextColor="White"
-                    HeightRequest="50"
-                    Margin="0,20,0,0"
-                    Command="{Binding SignUpCommand}"
-                    HorizontalOptions="FillAndExpand"
-                    CornerRadius="10"
-                    />
-
+            <Button 
+                x:Name="SignUpButton"
+                Text="Sign Up"
+                FontSize="20"
+                FontFamily="Roboto"
+                TextColor="White"
+                Command="{Binding SignUpCommand}"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#001f3f" Offset="0.0" />
+                        <GradientStop Color="#48997e" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            
             <!-- Link to Login Page-->
-            <Label Text="Already have an account?"
-                   FontSize="14"
-                   TextColor="#1D4ED8"
-                   HorizontalOptions="Center">
+            <Label 
+                Text="Already have an account?"
+                FontSize="14"
+                TextColor="#007AFF"
+                HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
                 </Label.GestureRecognizers>
             </Label>
 
             <!--Feedback Label -->
-            <Label FontSize="16"
-                   TextColor="{Binding FeedbackColor}"
-                   HorizontalOptions="Center"
-                   Text="{Binding Feedback}"
-                   />
+            <Label 
+                x:Name="FeedbackLabel"
+                FontSize="16"
+                TextColor="{Binding FeedbackColor}"
+                HorizontalOptions="Center"
+                Text="{Binding Feedback}"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
