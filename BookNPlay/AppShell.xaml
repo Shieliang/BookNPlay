@@ -21,4 +21,10 @@
         ContentTemplate="{DataTemplate local:Dashboard}"
         Route="Dashboard"/>
 
+    <!-- Add Facility Listing Page -->
+    <ShellContent
+        Title="Facility Listing"
+        ContentTemplate="{DataTemplate local:FacilityListing}"
+        Route="FacilityListing"/>
+
 </Shell>

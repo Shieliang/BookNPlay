@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookNPlay.Pages.FacilityListing"
+             BackgroundColor="#D2B48C"
+             Title="FACILITY LISTING">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="15">
+
+            <!-- Page Title -->
+            <Label 
+                Text="FACILITY LISTING"
+                TextColor="Black"
+                FontSize="24"
+                FontAttributes="Bold"
+                Margin="0,15,0,15"
+                HorizontalOptions="Center" />
+
+            <!-- Search Tool Bar -->
+            <Frame Padding="5" 
+                   BorderColor="Black" 
+                   BackgroundColor="Transparent"
+                   CornerRadius="0" 
+                   Margin="0,0,0,10"
+                   HasShadow="False">
+                <SearchBar x:Name="searchBar"
+                           Placeholder="Search/Filter"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           TextChanged="OnSearchTextChanged"
+                           BackgroundColor="Transparent" />
+            </Frame>
+
+            <!-- Available Facilities Section -->
+            <Label 
+                Text="AVAILABLE"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="0,10,0,10" />
+
+            <CollectionView ItemsSource="{Binding AvailableFacilities}" 
+                            ItemsLayout="VerticalList"
+                            Margin="0,0,0,20">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,0,0,15" 
+                               Padding="0" 
+                               BorderColor="Black" 
+                               BackgroundColor="White"
+                               CornerRadius="5" 
+                               HasShadow="True" 
+                               HeightRequest="150">
+
+                            <Grid ColumnDefinitions="1*,2*">
+                                <!-- Facility Image -->
+                                <Image Grid.Column="0" 
+                                       Source="{Binding ImageSource}"
+                                       Aspect="AspectFill" 
+                                       HeightRequest="150" />
+
+                                <!-- Facility Info -->
+                                <VerticalStackLayout Grid.Column="1" 
+                                                     Padding="20" 
+                                                     Spacing="8"
+                                                     VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" 
+                                           FontSize="18" 
+                                           TextColor="Black"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding Date}" 
+                                           FontSize="16" 
+                                           TextColor="Black" />
+                                    <Label Text="{Binding Time}" 
+                                           FontSize="16" 
+                                           TextColor="Black" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Not Available Facilities Section -->
+            <Label 
+                Text="NOT AVAILABLE"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                Margin="0,10,0,10" />
+
+            <CollectionView ItemsSource="{Binding NotAvailableFacilities}" 
+                            ItemsLayout="VerticalList"
+                            Margin="0,0,0,20">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,0,0,15" 
+                               Padding="0" 
+                               BorderColor="Black" 
+                               BackgroundColor="White"
+                               CornerRadius="5" 
+                               HasShadow="True" 
+                               HeightRequest="150">
+
+                            <Grid ColumnDefinitions="1*,2*">
+                                <!-- Facility Image -->
+                                <Image Grid.Column="0" 
+                                       Source="{Binding ImageSource}"
+                                       Aspect="AspectFill" 
+                                       HeightRequest="150" />
+
+                                <!-- Facility Info -->
+                                <VerticalStackLayout Grid.Column="1" 
+                                                     Padding="20"
+                                                     Spacing="8"
+                                                     VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" 
+                                           FontSize="18" 
+                                           TextColor="Black"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding Date}" 
+                                           FontSize="16" 
+                                           TextColor="Black" />
+                                    <Label Text="{Binding Time}" 
+                                           FontSize="16" 
+                                           TextColor="Black" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

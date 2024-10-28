@@ -40,6 +40,17 @@
             HorizontalOptions="Center"
             CornerRadius="10"/>
 
+        <!-- Navigate to Facility Listing Button -->
+        <Button
+            Text="Go to Facility Listing"
+            FontSize="20"
+            BackgroundColor="#4CAF50"
+            TextColor="White"
+            Command="{Binding NavigateToFacilityListingCommand}" 
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            CornerRadius="10"/>
+
     </VerticalStackLayout>
 
 </ContentPage>
