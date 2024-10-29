@@ -65,7 +65,7 @@
                         FontSize="18"
                         BackgroundColor="Transparent"
                         PlaceholderColor="Gray"
-                        TextColor="#CCCCCC"
+                        TextColor="#000000"
                         Text="{Binding User.Email}"
                         HorizontalOptions="FillAndExpand"/>
                 </Grid>
@@ -85,7 +85,7 @@
                         FontSize="18"
                         IsPassword="True"
                         PlaceholderColor="Gray"
-                        TextColor="#CCCCCC"
+                        TextColor="#000000"
                         HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
                         Text="{Binding User.Password}"/>
@@ -107,7 +107,7 @@
                         FontSize="18"
                         IsPassword="True"
                         PlaceholderColor="Gray"
-                        TextColor="#CCCCCC"
+                        TextColor="#000000"
                         HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
                         Text="{Binding User.ConfirmPassword}"/>
