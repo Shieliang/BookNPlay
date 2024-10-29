@@ -29,7 +29,9 @@
                 TextColor="#001f3f" />
 
             <!-- Username Entry -->
-            <Entry
+            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+                <Grid Padding="11,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <Entry
                 x:Name="EmailEntry"
                 Placeholder="Email"
                 FontSize="18"
@@ -38,9 +40,13 @@
                 HeightRequest="40"
                 HorizontalOptions="FillAndExpand"
                 Text="{Binding Email}" />
+                </Grid>
+            </Border>
 
             <!-- Password Entry -->
-            <Entry
+            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+                <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <Entry
                 x:Name="PasswordEntry"
                 Placeholder="Password"
                 FontSize="18"
@@ -50,6 +56,8 @@
                 HeightRequest="40"
                 HorizontalOptions="FillAndExpand"
                 Text="{Binding Password}" />
+                </Grid>
+            </Border>
 
             <!-- Login Button -->
             <Button
