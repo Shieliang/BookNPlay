@@ -58,7 +58,8 @@
                                 <Image Grid.Column="0" 
                                        Source="{Binding ImageSource}"
                                        Aspect="AspectFill" 
-                                       HeightRequest="150" />
+                                       HeightRequest="100" 
+                                       WidthRequest="100"/>
 
                                 <!-- Facility Info -->
                                 <VerticalStackLayout Grid.Column="1" 
@@ -108,7 +109,8 @@
                                 <Image Grid.Column="0" 
                                        Source="{Binding ImageSource}"
                                        Aspect="AspectFill" 
-                                       HeightRequest="150" />
+                                       HeightRequest="100" 
+                                       WidthRequest="100"/>
 
                                 <!-- Facility Info -->
                                 <VerticalStackLayout Grid.Column="1" 
