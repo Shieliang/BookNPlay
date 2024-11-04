@@ -67,7 +67,8 @@
                         PlaceholderColor="Gray"
                         TextColor="#000000"
                         Text="{Binding User.Email}"
-                        HorizontalOptions="FillAndExpand"/>
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
                 </Grid>
             </Border>
             
