@@ -8,49 +8,71 @@
     <ContentPage.BindingContext>
         <local:DashboardViewModel />
     </ContentPage.BindingContext>
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="30"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center">
 
-    <VerticalStackLayout
-        Spacing="20"
-        Padding="30"
-        VerticalOptions="Center">
+            <!-- App Logo -->
+            <Image 
+                Source="bnplogo.png" 
+                SemanticProperties.Description="App logo"
+                HeightRequest="300"
+                HorizontalOptions="Center"
+                />
 
-        <!-- Welcome Label -->
-        <Label
-            Text="Welcome to the Dashboard!"
-            FontSize="32"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            TextColor="#4CAF50"/>
+            <!-- Welcome Label -->
+            <Label
+                Text="Welcome to the Dashboard!"
+                FontSize="28"
+                FontAttributes="Bold"
+                FontFamily="Montserrat"
+                HorizontalOptions="Center"
+                TextColor="#001f3f"/>
 
-        <!-- Instructions Label -->
-        <Label
-            Text="You're successfully logged in."
-            FontSize="18"
-            HorizontalOptions="Center"
-            TextColor="Black"/>
+            <!-- Instructions Label -->
+            <Label
+                Text="You're successfully logged in."
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="#4CAF50"/>
 
-        <!-- Logout Button -->
-        <Button
-            Text="Logout"
-            FontSize="20"
-            BackgroundColor="#4CAF50"
-            TextColor="White"
-            Command="{Binding LogoutCommand}" 
-            HeightRequest="50"
-            HorizontalOptions="Center"
-            CornerRadius="10"/>
+            <!-- Logout Button with Rounded Corners and Gradient Background -->
+            <Frame HasShadow="False" Padding="0" CornerRadius="10" BorderColor="Transparent" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                <Button
+                    Text="Logout"
+                    FontSize="18"
+                    TextColor="White"
+                    Command="{Binding LogoutCommand}" 
+                    CornerRadius="10">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#001f3f" Offset="0.0"/>
+                            <GradientStop Color="#48997e" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Frame>
 
-        <!-- Navigate to Facility Listing Button -->
-        <Button
-            Text="Go to Facility Listing"
-            FontSize="20"
-            BackgroundColor="#4CAF50"
-            TextColor="White"
-            Command="{Binding NavigateToFacilityListingCommand}" 
-            HeightRequest="50"
-            HorizontalOptions="Center"
-            CornerRadius="10"/>
-
-    </VerticalStackLayout>
-
+            <!-- Navigate to Facility Listing Button with Rounded Corners and Gradient Background-->
+            <Frame HasShadow="False" Padding="0" CornerRadius="10" BorderColor="Transparent" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                <Button
+                    Text="Go to Facility Listing"
+                    FontSize="18"
+                    TextColor="White"
+                    Command="{Binding NavigateToFacilityListingCommand}" 
+                    CornerRadius="10">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#001f3f" Offset="0.0"/>
+                            <GradientStop Color="#48997e" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>
