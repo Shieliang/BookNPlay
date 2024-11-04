@@ -7,6 +7,10 @@ using CommunityToolkit.Mvvm.Input;
 using BookNPlay.Services; // Ensure to import your Firebase service
 using Microsoft.Maui.Controls;
 using Firebase.Auth;
+using static System.Net.WebRequestMethods;
+using Auth0.OidcClient;
+using IdentityModel.Client;
+
 
 namespace BookNPlay.ViewModels
 {
@@ -25,7 +29,8 @@ namespace BookNPlay.ViewModels
         [ObservableProperty]
         private Color feedbackColor;
 
-        private readonly FirebaseAuthService authService;
+        
+        private readonly Auth0Client auth0Client;
 
         // Commands for various login-related actions
         public ICommand LoginCommand { get; }
@@ -36,9 +41,9 @@ namespace BookNPlay.ViewModels
         public ICommand AppleLoginCommand { get; }
 
         // Constructor initializes commands and the Firebase service
-        public LoginViewModel()
+        public LoginViewModel(Auth0Client client)
         {
-            authService = new FirebaseAuthService(); // Initialize Firebase authentication service
+            
             LoginCommand = new AsyncRelayCommand(OnLogin); // Command for login
             NavigateToSignUpCommand = new AsyncRelayCommand(NavigateToSignUpAsync); // Command to navigate to sign-up page
             ForgotPasswordCommand = new AsyncRelayCommand(OnForgotPasswordTapped); // Forgot password command
@@ -46,6 +51,8 @@ namespace BookNPlay.ViewModels
             GoogleLoginCommand = new AsyncRelayCommand(OnGoogleLoginClicked);
             FacebookLoginCommand = new AsyncRelayCommand(OnFacebookLoginClicked);
             AppleLoginCommand = new AsyncRelayCommand(OnAppleLoginClicked);
+            auth0Client = client;
+            
         }
 
         // Login logic
@@ -61,22 +68,44 @@ namespace BookNPlay.ViewModels
 
             try
             {
-                // Try signing in the user using Firebase authentication service
-                var signInResponse = await authService.SignInWithEmailAndPassword(Email, Password);
+                // Use HttpClient to send a request to Auth0's /oauth/token endpoint
+                var client = new HttpClient();
+                var requestBody = new FormUrlEncodedContent(new[]
+                {
+                    new KeyValuePair<string, string>("client_id", "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU"),
+                    new KeyValuePair<string, string>("client_secret", "yVgnRTVpW1QPfEKI0nwegEDg8_JvmA4A9-W0xhcqkpYGJ7F6f_WUimRK_2AOSvXC"), // Ensure the client secret is secured
+                    new KeyValuePair<string, string>("audience", "https://dev-ghzmuldobn03le25.us.auth0.com/api/v2/"), // Optional, needed if using API
+                    new KeyValuePair<string, string>("grant_type", "password"),
+                    new KeyValuePair<string, string>("username", Email),
+                    new KeyValuePair<string, string>("password", Password),
+                    new KeyValuePair<string, string>("scope", "openid profile email"), // Adjust scope as needed
+                    new KeyValuePair<string, string>("connection", "Username-Password-Authentication") // Ensure this matches your Auth0 DB connection name
+                });
 
-                // Login success feedback
-                FeedbackColor = Colors.Green;
-                Feedback = "Login successful!";
+                var response = await client.PostAsync("https://dev-ghzmuldobn03le25.us.auth0.com/oauth/token", requestBody);
+                var content = await response.Content.ReadAsStringAsync();
 
-                // Navigate to the dashboard page after successful login
-                await Shell.Current.GoToAsync("//Dashboard");
-            }
-            catch (FirebaseAuthException authEx)
-            {
-                // FirebaseAuth-specific errors (e.g., invalid email, unverified account)
-                Debug.WriteLine(authEx);
-                FeedbackColor = Colors.Red;
-                Feedback = $"Login failed: {authEx.Message}";
+                if (response.IsSuccessStatusCode)
+                {
+                    // Parse the token response (e.g., using Newtonsoft.Json)
+                    var tokenResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenResponse>(content);
+
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Login successful!";
+
+                    // Proceed to your dashboard or secure the token for future use
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = "Login failed: " + content; // Display specific error if needed
+                    var errorResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(content);
+                    var errorMessage = errorResponse.ContainsKey("description") ? errorResponse["description"] : "An error occurred.";
+                    Debug.WriteLine(content);
+                    Debug.WriteLine(errorMessage);
+                }
+
             }
             catch (Exception ex)
             {
@@ -104,8 +133,9 @@ namespace BookNPlay.ViewModels
         // Placeholder methods for social login (to be implemented later)
         private async Task OnGoogleLoginClicked()
         {
-            // TODO: Implement Google login logic here
+            
         }
+
 
         private async Task OnFacebookLoginClicked()
         {

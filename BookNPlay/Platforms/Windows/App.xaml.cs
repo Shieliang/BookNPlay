@@ -17,7 +17,9 @@ public partial class App : MauiWinUIApplication
 	public App()
 	{
 		this.InitializeComponent();
-	}
+        if (Auth0.OidcClient.Platforms.Windows.Activator.Default.CheckRedirectionActivation())
+            return;
+    }
 
 	protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }

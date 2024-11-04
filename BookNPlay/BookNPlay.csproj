@@ -59,8 +59,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Auth0.OidcClient.MAUI" Version="1.0.1" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 	  <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+	  <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
@@ -88,6 +90,12 @@
 
 	<ItemGroup>
 	  <PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.92" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
+	  <PackageReference Include="Xamarin.GooglePlayServices.Auth">
+	    <Version>121.2.0.2</Version>
+	  </PackageReference>
 	</ItemGroup>
 
 </Project>

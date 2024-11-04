@@ -7,13 +7,13 @@ namespace BookNPlay.Pages
 {
     public partial class LoginPage : ContentPage
     {
-        private LoginViewModel viewModel;
+        private readonly LoginViewModel viewModel;
 
-        public LoginPage()
+        public LoginPage(LoginViewModel viewModel)
         {
             InitializeComponent();
-            viewModel = new LoginViewModel();
-            BindingContext = viewModel;
+            this.viewModel = viewModel; // Assign the parameter to the private field
+            BindingContext = this.viewModel; // Set the BindingContext to the ViewModel
         }
 
         // Event handler for the button tap animation

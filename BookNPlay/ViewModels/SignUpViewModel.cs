@@ -32,14 +32,12 @@ namespace BookNPlay.ViewModels
 
         public SignUpViewModel()
         {
-            SignUpCommand = new RelayCommand(OnSignUp);
+            SignUpCommand = new AsyncRelayCommand(OnSignUp);
             NavigateToLoginCommand = new AsyncRelayCommand(NavigateToLoginAsync);
         }
 
-        private async void OnSignUp()
+        private async Task OnSignUp()
         {
-            var authService = new FirebaseAuthService();
-
             // Validation logic
             if (string.IsNullOrWhiteSpace(User.Username) ||
                 string.IsNullOrWhiteSpace(User.Email) ||
@@ -79,22 +77,40 @@ namespace BookNPlay.ViewModels
                 return;
             }
 
-            // Attempt to sign up the user
             try
             {
-                // Sign up the user
-                var signupResponse = await authService.SignUpWithEmailAndPassword(User.Email, User.Password);
+                // Reuse the HttpClient
+                using (var client = new HttpClient())
+                {
+                    var requestBody = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(new
+                    {
+                        client_id = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU", // Consider using a secure method to manage this
+                        email = User.Email,
+                        password = User.Password,
+                        connection = "Username-Password-Authentication",
+                        name = User.Username
+                    }), System.Text.Encoding.UTF8, "application/json");
 
-                // Extract the ID token from the response
-                var token = ExtractIdToken(signupResponse);
+                    var response = await client.PostAsync("https://dev-ghzmuldobn03le25.us.auth0.com/dbconnections/signup", requestBody);
+                    var content = await response.Content.ReadAsStringAsync();
 
-                // Send email verification link
-                await authService.SendEmailVerificationLink(token);
-
-                // Show alert dialog
-                await Application.Current.MainPage.DisplayAlert("Success", "Sign-up successful! A verification email has been sent.", "OK");
-
-                await Shell.Current.GoToAsync("//LoginPage"); // Adjust based on your navigation setup
+                    if (response.IsSuccessStatusCode)
+                    {
+                        FeedbackColor = Colors.Green;
+                        Feedback = "Sign-up successful! Please check your email to verify your account.";
+                        await Application.Current.MainPage.DisplayAlert("Success", "Sign-up successful! A verification email has been sent.", "OK");
+                        await Shell.Current.GoToAsync("//LoginPage");
+                    }
+                    else
+                    {
+                        // Extract error details for better debugging
+                        var errorResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(content);
+                        var errorMessage = errorResponse.ContainsKey("description") ? errorResponse["description"] : "An error occurred.";
+                        FeedbackColor = Colors.Red;
+                        Feedback = $"Sign-up failed: {errorMessage}";
+                        Debug.WriteLine(content); // Log the content for debugging
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -102,21 +118,22 @@ namespace BookNPlay.ViewModels
                 FeedbackColor = Colors.Red;
                 Feedback = $"Sign-up failed: {ex.Message}";
             }
+
         }
 
         // Method to validate email format
         private bool IsValidEmail(string email)
-        {
-            try
             {
-                var mail = new System.Net.Mail.MailAddress(email);
-                return mail.Address == email;
+                try
+                {
+                    var mail = new System.Net.Mail.MailAddress(email);
+                    return mail.Address == email;
+                }
+                catch
+                {
+                    return false;
+                }
             }
-            catch
-            {
-                return false;
-            }
-        }
 
         // Method to check password strength
         private bool HasValidPassword(string password)
