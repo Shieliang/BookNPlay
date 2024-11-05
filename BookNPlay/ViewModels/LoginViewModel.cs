@@ -38,7 +38,7 @@ namespace BookNPlay.ViewModels
         public ICommand ForgotPasswordCommand { get; } // Command for forgot password flow
         public ICommand GoogleLoginCommand { get; }
         public ICommand FacebookLoginCommand { get; }
-        public ICommand GithubLoginCommand { get; }
+        public ICommand XLoginCommand { get; }
 
         // Constructor initializes commands and the Firebase service
         public LoginViewModel(Auth0Client client)
@@ -50,7 +50,7 @@ namespace BookNPlay.ViewModels
             // Initialize social login commands
             GoogleLoginCommand = new AsyncRelayCommand(OnGoogleLoginClicked);
             FacebookLoginCommand = new AsyncRelayCommand(OnFacebookLoginClicked);
-            GithubLoginCommand = new AsyncRelayCommand(OnGithubLoginClicked);
+            XLoginCommand = new AsyncRelayCommand(OnXLoginClicked);
             auth0Client = client;
             
         }
@@ -209,7 +209,7 @@ namespace BookNPlay.ViewModels
             }
         }
 
-        private async Task OnGithubLoginClicked()
+        private async Task OnXLoginClicked()
         {
             try
             {
@@ -222,7 +222,7 @@ namespace BookNPlay.ViewModels
 
                 var loginResult = await auth0Client.LoginAsync(new
                 {
-                    connection = "github"
+                    connection = "twitter"
                 });
 
                 if (!loginResult.IsError)
@@ -235,14 +235,14 @@ namespace BookNPlay.ViewModels
                 else
                 {
                     FeedbackColor = Colors.Red;
-                    Feedback = "Github Login failed: " + loginResult.Error;
+                    Feedback = "X Login failed: " + loginResult.Error;
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
                 FeedbackColor = Colors.Red;
-                Feedback = $"An error occurred during Apple login: {ex.Message}";
+                Feedback = $"An error occurred during X login: {ex.Message}";
             }
         }
     }
