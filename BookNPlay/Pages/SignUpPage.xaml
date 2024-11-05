@@ -194,14 +194,14 @@
                         CornerRadius="25" />
 
                 <!-- Sign Up with Apple Button -->
-                <Button Text="Sign Up With Apple"
+                <Button Text="Sign Up With X"
                         TextColor="Black"
                         FontSize="14"
                         FontFamily="Roboto"
                         BackgroundColor="Transparent"
                         HeightRequest="50"
                         HorizontalOptions="FillAndExpand"
-                        ImageSource="apicon.png"
+                        ImageSource="xicon.png"
                         ContentLayout="Left, 10"
                         Command="{Binding AppleSignUpCommand}"
                         BorderColor="#3b5998"

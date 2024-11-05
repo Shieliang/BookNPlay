@@ -56,6 +56,7 @@
 	  <None Remove="Resources\Images\fbicon.png" />
 	  <None Remove="Resources\Images\ggicon.png" />
 	  <None Remove="Resources\Images\username_icon.png" />
+	  <None Remove="Resources\Images\xicon.png" />
 	</ItemGroup>
 
 	<ItemGroup>

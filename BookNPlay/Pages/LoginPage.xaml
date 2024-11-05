@@ -146,7 +146,7 @@
                     BorderColor="#3b5998"
                     CornerRadius="25" />
 
-                <!-- Continue with Apple Button -->
+                <!-- Continue with X Button -->
                 <Button Text="Continue With X"
                     TextColor="Black"
                     FontSize="14"
@@ -154,7 +154,7 @@
                     BackgroundColor="Transparent"
                     HeightRequest="50"
                     HorizontalOptions="FillAndExpand"
-                    ImageSource="apicon.png"
+                    ImageSource="xicon.png"
                     ContentLayout="Left, 10"
                     Command="{Binding XLoginCommand}"
                     BorderColor="#3b5998"
