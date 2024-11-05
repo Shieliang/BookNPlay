@@ -180,7 +180,8 @@ namespace BookNPlay.ViewModels
                 var auth0Client = new Auth0Client(new Auth0ClientOptions
                 {
                     Domain = "dev-ghzmuldobn03le25.us.auth0.com",
-                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU"
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback"
                 });
 
                 var loginResult = await auth0Client.LoginAsync(new
