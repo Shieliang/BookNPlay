@@ -38,7 +38,7 @@ namespace BookNPlay.ViewModels
         public ICommand ForgotPasswordCommand { get; } // Command for forgot password flow
         public ICommand GoogleLoginCommand { get; }
         public ICommand FacebookLoginCommand { get; }
-        public ICommand AppleLoginCommand { get; }
+        public ICommand GithubLoginCommand { get; }
 
         // Constructor initializes commands and the Firebase service
         public LoginViewModel(Auth0Client client)
@@ -50,7 +50,7 @@ namespace BookNPlay.ViewModels
             // Initialize social login commands
             GoogleLoginCommand = new AsyncRelayCommand(OnGoogleLoginClicked);
             FacebookLoginCommand = new AsyncRelayCommand(OnFacebookLoginClicked);
-            AppleLoginCommand = new AsyncRelayCommand(OnAppleLoginClicked);
+            GithubLoginCommand = new AsyncRelayCommand(OnGithubLoginClicked);
             auth0Client = client;
             
         }
@@ -209,31 +209,33 @@ namespace BookNPlay.ViewModels
             }
         }
 
-        private async Task OnAppleLoginClicked()
+        private async Task OnGithubLoginClicked()
         {
             try
             {
                 var auth0Client = new Auth0Client(new Auth0ClientOptions
                 {
                     Domain = "dev-ghzmuldobn03le25.us.auth0.com",
-                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU"
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback"
                 });
 
                 var loginResult = await auth0Client.LoginAsync(new
                 {
-                    connection = "apple"
+                    connection = "github"
                 });
 
                 if (!loginResult.IsError)
                 {
+
                     FeedbackColor = Colors.Green;
-                    Feedback = "Apple Login successful!";
+                    Feedback = "Github Login successful!";
                     await Shell.Current.GoToAsync("//Dashboard");
                 }
                 else
                 {
                     FeedbackColor = Colors.Red;
-                    Feedback = "Apple Login failed: " + loginResult.Error;
+                    Feedback = "Github Login failed: " + loginResult.Error;
                 }
             }
             catch (Exception ex)

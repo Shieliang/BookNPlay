@@ -147,7 +147,7 @@
                     CornerRadius="25" />
 
                 <!-- Continue with Apple Button -->
-                <Button Text="Continue With Apple"
+                <Button Text="Continue With Github"
                     TextColor="Black"
                     FontSize="14"
                     FontFamily= "Roboto" 
@@ -156,7 +156,7 @@
                     HorizontalOptions="FillAndExpand"
                     ImageSource="apicon.png"
                     ContentLayout="Left, 10"
-                    Command="{Binding AppleLoginCommand}"
+                    Command="{Binding GithubLoginCommand}"
                     BorderColor="#3b5998"
                     CornerRadius="25" />
 
