@@ -2,32 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookNPlay.Pages.FacilityListing"
-             BackgroundColor="#D2B48C"
+             BackgroundColor="#FFFFFF"
              Title="FACILITY LISTING">
 
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="15">
 
+            <!-- Logo -->
+            <Image Source="bnplogo.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Margin="0,10,0,10"/>
+
             <!-- Page Title -->
             <Label 
                 Text="FACILITY LISTING"
-                TextColor="Black"
+                TextColor="#001f3f"
                 FontSize="24"
                 FontAttributes="Bold"
-                Margin="0,15,0,15"
+                Margin="0,5,0,10"
                 HorizontalOptions="Center" />
 
             <!-- Search Tool Bar -->
             <Frame Padding="5" 
-                   BorderColor="Black" 
-                   BackgroundColor="Transparent"
-                   CornerRadius="0" 
+                   BorderColor="#001f3f" 
+                   BackgroundColor="#F2F2F2"
+                   CornerRadius="8" 
                    Margin="0,0,0,10"
                    HasShadow="False">
                 <SearchBar x:Name="searchBar"
                            Placeholder="Search/Filter"
-                           PlaceholderColor="Black"
-                           TextColor="Black"
+                           PlaceholderColor="Gray"
+                           TextColor="#001f3f"
                            TextChanged="OnSearchTextChanged"
                            BackgroundColor="Transparent" />
             </Frame>
@@ -35,7 +43,7 @@
             <!-- Available Facilities Section -->
             <Label 
                 Text="AVAILABLE"
-                TextColor="Black"
+                TextColor="#001f3f"
                 FontSize="20"
                 FontAttributes="Bold"
                 Margin="0,10,0,10" />
@@ -47,10 +55,10 @@
                     <DataTemplate>
                         <Frame Margin="0,0,0,15" 
                                Padding="0" 
-                               BorderColor="Black" 
-                               BackgroundColor="White"
-                               CornerRadius="5" 
-                               HasShadow="True" 
+                               BorderColor="#001f3f" 
+                               BackgroundColor="#FFFFFF"
+                               CornerRadius="8" 
+                               HasShadow="False" 
                                HeightRequest="150">
 
                             <Grid ColumnDefinitions="1*,2*">
@@ -58,23 +66,24 @@
                                 <Image Grid.Column="0" 
                                        Source="{Binding ImageSource}"
                                        Aspect="AspectFill" 
-                                       HeightRequest="150" />
+                                       HeightRequest="100" 
+                                       WidthRequest="100"/>
 
                                 <!-- Facility Info -->
                                 <VerticalStackLayout Grid.Column="1" 
-                                                     Padding="20" 
+                                                     Padding="15" 
                                                      Spacing="8"
                                                      VerticalOptions="Center">
                                     <Label Text="{Binding Name}" 
                                            FontSize="18" 
-                                           TextColor="Black"
+                                           TextColor="#001f3f"
                                            FontAttributes="Bold"/>
                                     <Label Text="{Binding Date}" 
                                            FontSize="16" 
-                                           TextColor="Black" />
+                                           TextColor="Gray" />
                                     <Label Text="{Binding Time}" 
                                            FontSize="16" 
-                                           TextColor="Black" />
+                                           TextColor="Gray" />
                                 </VerticalStackLayout>
                             </Grid>
                         </Frame>
@@ -85,7 +94,7 @@
             <!-- Not Available Facilities Section -->
             <Label 
                 Text="NOT AVAILABLE"
-                TextColor="Black"
+                TextColor="#001f3f"
                 FontSize="20"
                 FontAttributes="Bold"
                 Margin="0,10,0,10" />
@@ -97,10 +106,10 @@
                     <DataTemplate>
                         <Frame Margin="0,0,0,15" 
                                Padding="0" 
-                               BorderColor="Black" 
-                               BackgroundColor="White"
-                               CornerRadius="5" 
-                               HasShadow="True" 
+                               BorderColor="#001f3f" 
+                               BackgroundColor="#FFFFFF"
+                               CornerRadius="8" 
+                               HasShadow="False" 
                                HeightRequest="150">
 
                             <Grid ColumnDefinitions="1*,2*">
@@ -108,7 +117,8 @@
                                 <Image Grid.Column="0" 
                                        Source="{Binding ImageSource}"
                                        Aspect="AspectFill" 
-                                       HeightRequest="150" />
+                                       HeightRequest="100" 
+                                       WidthRequest="100"/>
 
                                 <!-- Facility Info -->
                                 <VerticalStackLayout Grid.Column="1" 
@@ -117,14 +127,14 @@
                                                      VerticalOptions="Center">
                                     <Label Text="{Binding Name}" 
                                            FontSize="18" 
-                                           TextColor="Black"
+                                           TextColor="#001f3f"
                                            FontAttributes="Bold"/>
                                     <Label Text="{Binding Date}" 
                                            FontSize="16" 
-                                           TextColor="Black" />
+                                           TextColor="Gray" />
                                     <Label Text="{Binding Time}" 
                                            FontSize="16" 
-                                           TextColor="Black" />
+                                           TextColor="Gray" />
                                 </VerticalStackLayout>
                             </Grid>
                         </Frame>
