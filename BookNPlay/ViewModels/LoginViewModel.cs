@@ -133,18 +133,114 @@ namespace BookNPlay.ViewModels
         // Placeholder methods for social login (to be implemented later)
         private async Task OnGoogleLoginClicked()
         {
-            
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback",
+                    PostLogoutRedirectUri = "myapp://callback",
+                    Scope = "openid profile email"
+                    
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "google-oauth2",
+                    audience = "https://dev-ghzmuldobn03le25.us.auth0.com/api/v2/"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Google Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = $"Google Login failed: {loginResult.Error} - {loginResult.ErrorDescription}";
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Exception during Google login: {ex}");
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during Google login: {ex.Message}";
+            }
         }
+
 
 
         private async Task OnFacebookLoginClicked()
         {
-            // TODO: Implement Facebook login logic here
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU"
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "facebook"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Facebook Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = "Facebook Login failed: " + loginResult.Error;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during Facebook login: {ex.Message}";
+            }
         }
 
         private async Task OnAppleLoginClicked()
         {
-            // TODO: Implement Apple login logic here
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU"
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "apple"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Apple Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = "Apple Login failed: " + loginResult.Error;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during Apple login: {ex.Message}";
+            }
         }
     }
 }
