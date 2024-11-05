@@ -26,7 +26,7 @@
 
             <!-- Welcome Label -->
             <Label
-                Text="Welcome to the Dashboard!"
+                Text="Welcome to Book N' Play!"
                 FontSize="28"
                 FontAttributes="Bold"
                 FontFamily="Montserrat"
@@ -38,12 +38,12 @@
                 Text="You're successfully logged in."
                 FontSize="18"
                 HorizontalOptions="Center"
-                TextColor="#4CAF50"/>
+                TextColor="#48997e"/>
 
             <!-- Logout Button with Rounded Corners and Gradient Background -->
             <Frame HasShadow="False" Padding="0" CornerRadius="10" BorderColor="Transparent" HorizontalOptions="FillAndExpand" HeightRequest="50">
                 <Button
-                    Text="Go to Facility Listing"
+                    Text="View Facilities"
                     FontSize="18"
                     TextColor="White"
                     Command="{Binding NavigateToFacilityListingCommand}" 
@@ -62,15 +62,12 @@
                 <Button
                     Text="Logout"
                     FontSize="18"
-                    TextColor="White"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1"
+                    BorderColor="#3b5998"
                     Command="{Binding LogoutCommand}"
                     CornerRadius="10">
-                    <Button.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Color="#001f3f" Offset="0.0"/>
-                            <GradientStop Color="#48997e" Offset="1.0"/>
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
             </Frame>
             </VerticalStackLayout>
