@@ -1,64 +1,33 @@
-using System.Collections.ObjectModel;
+using System.Linq;
 using Microsoft.Maui.Controls;
-using BookNPlay.Services;
+using System.Collections.ObjectModel;
 using BookNPlay.Models;
-using System.ComponentModel;
+using BookNPlay.Services;
 
 namespace BookNPlay.Pages
 {
-    public partial class FacilityListing : ContentPage, INotifyPropertyChanged
+    public partial class FacilityListing : ContentPage
     {
-        private FacilityService facilityService;
-        private ObservableCollection<FacilityModel> availableFacilities;
-        private ObservableCollection<FacilityModel> notAvailableFacilities;
+        private readonly FacilityService _facilityService;
 
-        public ObservableCollection<FacilityModel> AvailableFacilities
-        {
-            get => availableFacilities;
-            set
-            {
-                availableFacilities = value;
-                OnPropertyChanged(nameof(AvailableFacilities));
-            }
-        }
-
-        public ObservableCollection<FacilityModel> NotAvailableFacilities
-        {
-            get => notAvailableFacilities;
-            set
-            {
-                notAvailableFacilities = value;
-                OnPropertyChanged(nameof(NotAvailableFacilities));
-            }
-        }
+        public ObservableCollection<FacilityModel> AvailableFacilities { get; set; }
+        public ObservableCollection<FacilityModel> NotAvailableFacilities { get; set; }
 
         public FacilityListing()
         {
             InitializeComponent();
-            facilityService = new FacilityService();
-            LoadFacilities();
+            _facilityService = new FacilityService();
+
+            // Fetch available and not available facilities
+            AvailableFacilities = new ObservableCollection<FacilityModel>(
+                _facilityService.GetAvailableFacilities());
+
+            NotAvailableFacilities = new ObservableCollection<FacilityModel>(
+                _facilityService.Facilities.Where(f => !f.IsAvailable));
+
             BindingContext = this;
         }
 
-        private void LoadFacilities()
-        {
-            AvailableFacilities = facilityService.GetAvailableFacilities();
-            NotAvailableFacilities = facilityService.GetNotAvailableFacilities();
-        }
-
-        private void OnSearchTextChanged(object sender, TextChangedEventArgs e)
-        {
-            string searchText = e.NewTextValue?.ToLower() ?? string.Empty;
-
-            if (string.IsNullOrEmpty(searchText))
-            {
-                LoadFacilities();
-            }
-            else
-            {
-                AvailableFacilities = facilityService.SearchFacilities(searchText, true);
-                NotAvailableFacilities = facilityService.SearchFacilities(searchText, false);
-            }
-        }
+        // Remove OnFacilitySelected method if detail page is not required
     }
 }
