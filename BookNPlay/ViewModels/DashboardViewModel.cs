@@ -35,7 +35,7 @@ namespace BookNPlay.ViewModels
         private async Task OnNavigateToFacilityListing()
         {
             // Navigate to Facility Listing page
-            await Shell.Current.GoToAsync("//FacilityListing");
+            await Shell.Current.GoToAsync("//FacilityListingPage");
         }
     }
 }

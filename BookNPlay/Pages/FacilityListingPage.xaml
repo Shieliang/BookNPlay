@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BookNPlay.ViewModels"
+             x:Class="BookNPlay.Pages.FacilityListingPage"
+             BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <vm:FacilityListingViewModel />
+    </ContentPage.BindingContext>
+
+    <CollectionView ItemsSource="{Binding Facilities}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Padding="10">
+                    <Label Text="{Binding Name}" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="{Binding Type}" FontSize="14" TextColor="Black" />
+                    <Label Text="{Binding Description}" FontSize="16" TextColor="Black"/>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

@@ -26,5 +26,10 @@
         Title="Facility Listing"
         ContentTemplate="{DataTemplate local:FacilityListing}"
         Route="FacilityListing"/>
+    
+    <ShellContent
+        Title="Facility Listing"
+        ContentTemplate="{DataTemplate local:FacilityListingPage}"
+        Route="FacilityListingPage"/>
 
 </Shell>

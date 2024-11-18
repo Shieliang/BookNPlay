@@ -30,10 +30,12 @@ public static class MauiProgram
         .AddSingleton<DashboardViewModel>()
         .AddSingleton<DashboardViewModel>()
         .AddSingleton<SignUpViewModel>()
+        .AddSingleton<FacilityListingViewModel>()
         .AddSingleton<LoginPage>()
         .AddSingleton<SignUpPage>()
         .AddSingleton<FacilityListing>()
-        .AddSingleton<Dashboard>();
+        .AddSingleton<Dashboard>()
+        .AddSingleton<FacilityListingPage>();
 
         builder.Services.AddSingleton(new Auth0Client(new()
         {
