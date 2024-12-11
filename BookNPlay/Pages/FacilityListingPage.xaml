@@ -14,6 +14,12 @@
                     <Label Text="{Binding Name}" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
                     <Label Text="{Binding Type}" FontSize="14" TextColor="Black" />
                     <Label Text="{Binding Description}" FontSize="16" TextColor="Black"/>
+                    <Button Text="Book"
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:FacilityListingViewModel}}, Path=BookFacilityCommand}"
+                        CommandParameter="{Binding .}"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        CornerRadius="5" />
                 </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>

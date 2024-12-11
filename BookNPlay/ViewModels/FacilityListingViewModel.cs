@@ -17,6 +17,8 @@ namespace BookNPlay.ViewModels
 
         public ObservableCollection<Facility> Facilities { get; private set; } = new();
         public IAsyncRelayCommand LoadFacilitiesCommand { get; }
+        public IRelayCommand<Facility> BookFacilityCommand { get; }
+
 
         public FacilityListingViewModel()
         {
@@ -26,6 +28,7 @@ namespace BookNPlay.ViewModels
             // Command to load facilities
             LoadFacilitiesCommand = new AsyncRelayCommand(LoadFacilitiesAsync);
 
+            BookFacilityCommand = new RelayCommand<Facility>(OnBookFacility);
         }
 
         private IMongoCollection<Facility> InitializeMongoConnection()
@@ -61,6 +64,14 @@ namespace BookNPlay.ViewModels
                 Debug.WriteLine($"Error fetching facilities: {ex.Message}");
             }
         }
-
+        private void OnBookFacility(Facility facility)
+        {
+            // Implement booking logic here, such as navigation or saving data to Firebase
+            if (facility != null)
+            {
+                // Example: Navigate to a booking page
+                App.Current.MainPage.DisplayAlert("Booking", $"You booked {facility.Name}!", "OK");
+            }
+        }
     }
 }
