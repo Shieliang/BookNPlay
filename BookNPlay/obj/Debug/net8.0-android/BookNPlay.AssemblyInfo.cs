@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookNPlay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c0869b10ae7244fd86146a410b5d4ee97716a291")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0cf84e517e43b1b1fac54c5e2d503b53d18c2d99")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookNPlay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookNPlay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

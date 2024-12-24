@@ -55,11 +55,23 @@
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Font Awesome 6 Brands-Regular-400.otf">
+      <PackagePath>Font Awesome 6 Brands-Regular-400.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Font Awesome 6 Free-Regular-400.otf">
+      <PackagePath>Font Awesome 6 Free-Regular-400.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Font Awesome 6 Free-Solid-900.otf">
+      <PackagePath>Font Awesome 6 Free-Solid-900.otf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\apicon.scale-100.png">
+      <PackagePath>apicon.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
@@ -199,6 +211,18 @@
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\badminton.scale-100.png">
+      <PackagePath>badminton.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\basketball.scale-100.png">
+      <PackagePath>basketball.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bnp.scale-100.png">
+      <PackagePath>bnp.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bnplogo.scale-100.png">
+      <PackagePath>bnplogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -213,6 +237,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fbicon.scale-100.png">
+      <PackagePath>fbicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\football.scale-100.png">
+      <PackagePath>football.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ggicon.scale-100.png">
+      <PackagePath>ggicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gym.scale-100.png">
+      <PackagePath>gym.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\netball.scale-100.png">
+      <PackagePath>netball.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\snooker.scale-100.png">
+      <PackagePath>snooker.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\xicon.scale-100.png">
+      <PackagePath>xicon.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.deps.json">
       <PackagePath>BookNPlay.deps.json</PackagePath>
