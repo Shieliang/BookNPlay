@@ -57,19 +57,38 @@ namespace BookNPlay.ViewModels
                 Debug.WriteLine($"Error fetching facilities: {ex.Message}");
             }
         }
-        private void OnBookFacility(FacilityListingModel facility)
+        private async void OnBookFacility(FacilityListingModel facility)
         {
-            // Implement booking logic here, such as navigation or saving data to Firebase
+            // Check if facility is not null
             if (facility != null)
             {
-                if (facility == null)
+                try
                 {
-                    Debug.WriteLine("Attempted to book a null facility.");
-                    return;
+                    // Example: Navigate to Booking Page and pass selected facility as parameter
+                    var bookingPage = new BookNPlay.Pages.BookingPage(); // Assuming you have a BookingPage
+                    var viewModel = new BookingViewModel
+                    {
+                        // Set the selected facility details for booking
+                        FacilityName = facility.FacilityName,
+                        FacilityId = facility.Id,
+                    };
+
+                    // Bind the ViewModel to the page (if you are using MVVM)
+                    bookingPage.BindingContext = viewModel;
+
+                    // Navigate to the BookingPage
+                    await App.Current.MainPage.Navigation.PushAsync(bookingPage);
                 }
-                // Example: Navigate to a booking page
-                App.Current.MainPage.DisplayAlert("Booking", $"You booked {facility.FacilityName}!", "OK");
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error booking facility: {ex.Message}");
+                }
+            }
+            else
+            {
+                Debug.WriteLine("Attempted to book a null facility.");
             }
         }
+
     }
 }

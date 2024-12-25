@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookNPlay.Pages.BookingPage"
+             xmlns:vm="clr-namespace:BookNPlay.ViewModels"
+             Title="Booking Page"
+             BackgroundColor="Black">
+    <ContentPage.BindingContext>
+        <vm:BookingViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="{Binding FacilityName}" FontSize="20" />
+
+        <!-- Name -->
+        <Entry Placeholder="Enter Name" Text="{Binding UserName}" />
+
+        <!-- Student ID -->
+        <Entry Placeholder="Enter Student ID" Text="{Binding StudentId}" Keyboard="Numeric" />
+
+        <!-- Student Email -->
+        <Entry Placeholder="Enter Student Email" Text="{Binding StudentEmail}" Keyboard="Email" />
+
+        <!-- Date Picker -->
+        <Label Text="Select a Date" FontSize="20" />
+        <DatePicker Date="{Binding SelectedDate}" />
+        
+        <!-- Time Picker -->
+        <Picker Title="Select Time Slot" ItemsSource="{Binding TimeSlots}" SelectedItem="{Binding SelectedTimeSlot,Mode=TwoWay}">
+        </Picker>
+
+        <!-- Submit Button -->
+        <Button Text="Submit Booking" Command="{Binding SubmitBookingCommand}" />
+
+    </StackLayout>
+</ContentPage>
