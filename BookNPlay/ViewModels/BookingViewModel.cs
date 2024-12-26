@@ -34,6 +34,8 @@ namespace BookNPlay.ViewModels
 
         [ObservableProperty]
         private string selectedTimeSlot;
+        [ObservableProperty]
+        private string phoneNumber;
 
         // Time slots for picker
         public ObservableCollection<string> TimeSlots { get; set; } = new ObservableCollection<string>
@@ -71,7 +73,7 @@ namespace BookNPlay.ViewModels
                     StudentId = StudentId,
                     StudentName = UserName, // Assuming student name is the same as user name
                     UserID = "U123", // Example user ID
-                    PhoneNumber = "0172628592" // Example phone number
+                    PhoneNumber = phoneNumber
                 };
 
                 // Connect to MongoDB
@@ -87,6 +89,8 @@ namespace BookNPlay.ViewModels
 
                 // Display confirmation
                 await App.Current.MainPage.DisplayAlert("Booking Confirmation", "Your booking has been confirmed!", "OK");
+                await Shell.Current.GoToAsync("//Dashboard");
+
             }
             catch (Exception ex)
             {

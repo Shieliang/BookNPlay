@@ -21,6 +21,8 @@
         <!-- Student Email -->
         <Entry Placeholder="Enter Student Email" Text="{Binding StudentEmail}" Keyboard="Email" />
 
+        <Entry Placeholder="Enter PhoneNumber" Text="{Binding PhoneNumber}" Keyboard="Telephone" />
+
         <!-- Date Picker -->
         <Label Text="Select a Date" FontSize="20" />
         <DatePicker Date="{Binding SelectedDate}" />
