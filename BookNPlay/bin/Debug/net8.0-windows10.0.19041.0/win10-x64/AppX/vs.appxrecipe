@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-26T10:41:20.558</Modified>
+      <Modified>2024-12-26T11:21:55.829</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-26T10:08:16.203</Modified>
+      <Modified>2024-12-26T11:21:55.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.runtimeconfig.json">
       <PackagePath>BookNPlay.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.dll">
       <PackagePath>BookNPlay.dll</PackagePath>
-      <Modified>2024-12-26T10:41:19.541</Modified>
+      <Modified>2024-12-26T11:21:54.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookNPlay.exe</PackagePath>
-      <Modified>2024-12-26T10:41:19.582</Modified>
+      <Modified>2024-12-26T11:21:54.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -348,7 +348,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.deps.json">
       <PackagePath>BookNPlay.deps.json</PackagePath>
-      <Modified>2024-12-26T10:08:15.852</Modified>
+      <Modified>2024-12-26T11:21:55.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

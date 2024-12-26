@@ -29,7 +29,11 @@ namespace BookNPlay
             .AddSingleton<Dashboard>()
             .AddSingleton<DashboardViewModel>()
             .AddSingleton<FacilityListingPage>()
-            .AddSingleton<FacilityListingViewModel>();
+            .AddSingleton<FacilityListingViewModel>()
+            .AddSingleton<BookingTrackerPage>()
+            .AddSingleton<BookingTrackerViewModel>()
+            .AddSingleton<ResetPasswordPage>()
+            .AddSingleton<ResetPasswordViewModel>();
 
             builder.Services.AddSingleton(new Auth0Client(new()
             {

@@ -65,7 +65,6 @@ namespace BookNPlay.ViewModels
                 string actualUserId = await SecureStorage.GetAsync("user_id");
                 var booking = new BookingModel
                 {
-                    BookingId = $"B{new Random().Next(1000, 9999)}", // Generate a simple random booking ID
                     FacilityId = FacilityId, // Example facility ID (you'll likely get this dynamically)
                     FacilityName = FacilityName, // Example facility name
                     Time = SelectedTimeSlot,

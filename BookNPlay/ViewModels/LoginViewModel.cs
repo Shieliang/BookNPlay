@@ -128,12 +128,13 @@ namespace BookNPlay.ViewModels
         }
 
         // Forgot password functionality (to be implemented)
+        // Forgot password functionality
         private async Task OnForgotPasswordTapped()
         {
-            // Navigate to forgot password page or handle forgot password functionality here
-            // TODO: Implement forgot password logic
-            await Shell.Current.GoToAsync("//SignUpPage");
+            // Navigate to the reset password page
+            await Shell.Current.GoToAsync("//ResetPasswordPage");
         }
+
 
         // Placeholder methods for social login (to be implemented later)
         private async Task OnGoogleLoginClicked()

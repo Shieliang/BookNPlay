@@ -45,6 +45,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.BookingPag
 build_metadata.AdditionalFiles.TargetPath = Pages\BookingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\BookingPage.xaml
 
+[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/BookingTrackerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.BookingTrackerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BookingTrackerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BookingTrackerPage.xaml
+
 [C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/Dashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.Dashboard.xaml
@@ -62,6 +68,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/ResetPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ResetPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ResetPasswordPage.xaml
 
 [C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/SignUpPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

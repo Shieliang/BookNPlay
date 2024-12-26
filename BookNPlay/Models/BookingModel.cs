@@ -11,7 +11,6 @@ namespace BookNPlay.Models
     public class BookingModel
     {
         public ObjectId Id { get; set; }
-        public string BookingId { get; set; }
         public string FacilityId { get; set; }
         public string FacilityName { get; set; }
         public string Time { get; set; }

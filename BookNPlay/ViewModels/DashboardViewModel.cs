@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace BookNPlay.ViewModels
 {
@@ -12,10 +13,17 @@ namespace BookNPlay.ViewModels
         public IAsyncRelayCommand LogoutCommand { get; }
         // Navigate to Facility Listing Command
         public IAsyncRelayCommand NavigateToFacilityListingCommand { get; }
+        public ICommand NavigateToBookingTrackerCommand { get; }
 
         public DashboardViewModel() {
+            NavigateToBookingTrackerCommand = new AsyncRelayCommand(NavigateToBookingTracker);
             LogoutCommand = new AsyncRelayCommand(OnLogout);
             NavigateToFacilityListingCommand = new AsyncRelayCommand(OnNavigateToFacilityListing);
+        }
+        private async Task NavigateToBookingTracker()
+        {
+            // Navigation to BookingTrackerPage
+            await Shell.Current.GoToAsync("//BookingTrackerPage");
         }
         private async Task OnLogout()
         {
