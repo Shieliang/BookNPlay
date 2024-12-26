@@ -11,6 +11,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using Newtonsoft;
 using CommunityToolkit.Mvvm.Input;
 using BookNPlay.Models;
+using JWT.Serializers;
+using JWT;
+using Newtonsoft.Json;
 
 namespace BookNPlay.ViewModels
 {
@@ -79,11 +82,17 @@ namespace BookNPlay.ViewModels
 
                 var response = await client.PostAsync("https://dev-ghzmuldobn03le25.us.auth0.com/oauth/token", requestBody);
                 var content = await response.Content.ReadAsStringAsync();
+                content = content.Trim();
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // Parse the token response (e.g., using Newtonsoft.Json)
                     var tokenResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenResponse>(content);
+                    
+                    string userId = tokenResponse?.Id_Token; // Extract user ID from the token response
+                    userId = DecodeJwtToken(userId);
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
 
                     FeedbackColor = Colors.Green;
                     Feedback = "Login successful!";
@@ -149,6 +158,10 @@ namespace BookNPlay.ViewModels
 
                 if (!loginResult.IsError)
                 {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
                     FeedbackColor = Colors.Green;
                     Feedback = "Google Login successful!";
                     await Shell.Current.GoToAsync("//Dashboard");
@@ -185,6 +198,10 @@ namespace BookNPlay.ViewModels
 
                 if (!loginResult.IsError)
                 {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
                     FeedbackColor = Colors.Green;
                     Feedback = "Facebook Login successful!";
                     await Shell.Current.GoToAsync("//Dashboard");
@@ -221,7 +238,10 @@ namespace BookNPlay.ViewModels
 
                 if (!loginResult.IsError)
                 {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
 
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
                     FeedbackColor = Colors.Green;
                     Feedback = "Github Login successful!";
                     await Shell.Current.GoToAsync("//Dashboard");
@@ -238,6 +258,51 @@ namespace BookNPlay.ViewModels
                 FeedbackColor = Colors.Red;
                 Feedback = $"An error occurred during X login: {ex.Message}";
             }
+        }
+        public async Task<string> GetUserIdAsync()
+        {
+            return await SecureStorage.GetAsync("user_id");
+        }
+
+        // Clear User ID During Logout
+        public async Task ClearUserIdAsync()
+        {
+            SecureStorage.Remove("user_id");
+        }
+        private string DecodeJwtToken(string token)
+        {
+            // JWT has 3 parts: Header, Payload, Signature
+            string[] parts = token.Split('.');
+
+            if (parts.Length != 3)
+            {
+                throw new ArgumentException("Invalid JWT token format.");
+            }
+
+            // Decode the Payload (second part) from Base64Url to JSON string
+            string payloadBase64Url = parts[1];
+            string payloadBase64 = Base64UrlDecode(payloadBase64Url);
+
+            // Deserialize the Payload to extract the user ID (sub claim)
+            var payloadJson = JsonConvert.DeserializeObject<Dictionary<string, object>>(payloadBase64);
+
+            // Extract the user ID from the 'sub' claim
+            return payloadJson.ContainsKey("sub") ? payloadJson["sub"].ToString() : null;
+        }
+
+        private string Base64UrlDecode(string base64Url)
+        {
+            // Convert Base64Url to standard Base64
+            string base64 = base64Url.Replace('-', '+').Replace('_', '/');
+            switch (base64.Length % 4) // Add padding if needed
+            {
+                case 2: base64 += "=="; break;
+                case 3: base64 += "="; break;
+            }
+
+            // Decode the Base64 string
+            byte[] bytes = Convert.FromBase64String(base64);
+            return Encoding.UTF8.GetString(bytes);
         }
     }
 }

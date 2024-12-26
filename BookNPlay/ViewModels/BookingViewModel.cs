@@ -62,6 +62,7 @@ namespace BookNPlay.ViewModels
             // Ensure the method is async and does not return a value (void)
             try
             {
+                string actualUserId = await SecureStorage.GetAsync("user_id");
                 var booking = new BookingModel
                 {
                     BookingId = $"B{new Random().Next(1000, 9999)}", // Generate a simple random booking ID
@@ -72,7 +73,7 @@ namespace BookNPlay.ViewModels
                     UserName = UserName,
                     StudentId = StudentId,
                     StudentName = UserName, // Assuming student name is the same as user name
-                    UserID = "U123", // Example user ID
+                    UserID = actualUserId, // Example user ID
                     PhoneNumber = phoneNumber
                 };
 

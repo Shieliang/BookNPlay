@@ -8,10 +8,10 @@ namespace BookNPlay.Models
 {
     public class TokenResponse
     {
-        public string AccessToken { get; set; }
-        public string IdToken { get; set; }
-        public string RefreshToken { get; set; }
-        public int ExpiresIn { get; set; }
-        public string TokenType { get; set; }
+        public string Access_Token { get; set; }
+        public string Id_Token { get; set; }
+        public string Scope { get; set; }  // Add this to match the response
+        public int Expires_In { get; set; }
+        public string Token_Type { get; set; }
     }
 }

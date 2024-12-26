@@ -20,7 +20,7 @@ namespace BookNPlay.ViewModels
         private async Task OnLogout()
         {
             // Perform logout
-
+            SecureStorage.Remove("user_id");
 
             // Navigate to the login page
             await Shell.Current.GoToAsync("//LoginPage");

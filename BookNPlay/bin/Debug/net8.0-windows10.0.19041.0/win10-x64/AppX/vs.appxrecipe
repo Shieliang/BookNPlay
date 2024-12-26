@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-26T06:22:19.526</Modified>
+      <Modified>2024-12-26T10:41:20.558</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-25T06:40:24.691</Modified>
+      <Modified>2024-12-26T10:08:16.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.runtimeconfig.json">
       <PackagePath>BookNPlay.runtimeconfig.json</PackagePath>
-      <Modified>2024-12-25T02:27:45.150</Modified>
+      <Modified>2024-12-26T10:08:15.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.dll">
       <PackagePath>BookNPlay.dll</PackagePath>
-      <Modified>2024-12-26T06:22:18.428</Modified>
+      <Modified>2024-12-26T10:41:19.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookNPlay.exe</PackagePath>
-      <Modified>2024-12-26T06:22:18.475</Modified>
+      <Modified>2024-12-26T10:41:19.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -348,7 +348,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.deps.json">
       <PackagePath>BookNPlay.deps.json</PackagePath>
-      <Modified>2024-12-25T06:40:24.325</Modified>
+      <Modified>2024-12-26T10:08:15.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -385,6 +385,10 @@
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\identitymodel.oidcclient\5.2.1\lib\netstandard2.0\IdentityModel.OidcClient.dll">
       <PackagePath>IdentityModel.OidcClient.dll</PackagePath>
       <Modified>2023-01-03T07:45:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\jwt\11.0.0\lib\net8.0\JWT.dll">
+      <PackagePath>JWT.dll</PackagePath>
+      <Modified>2024-12-04T04:30:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>

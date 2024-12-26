@@ -289,6 +289,9 @@
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\identitymodel.oidcclient\5.2.1\lib\netstandard2.0\IdentityModel.OidcClient.dll">
       <PackagePath>IdentityModel.OidcClient.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\jwt\11.0.0\lib\net8.0\JWT.dll">
+      <PackagePath>JWT.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>

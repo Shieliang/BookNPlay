@@ -11,6 +11,7 @@
         "dependencies": {
           "Auth0.OidcClient.MAUI": "1.0.1",
           "CommunityToolkit.Mvvm": "8.4.0",
+          "JWT": "11.0.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.1",
           "Microsoft.Maui.Controls": "8.0.83",
           "Microsoft.Maui.Controls.Compatibility": "8.0.83",
@@ -99,6 +100,17 @@
           "lib/netstandard2.0/IdentityModel.OidcClient.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.2.1.0"
+          }
+        }
+      },
+      "JWT/11.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/JWT.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
           }
         }
       },
@@ -765,6 +777,13 @@
       "sha512": "sha512-OuPhDNAw/EoJVEmYO6/ChZUBcug4OGoGKTKLUyBCsGhlKegxJk25LYQ0EL7GCBMgkEL+BYNJukNZyaJ+JNaWog==",
       "path": "identitymodel.oidcclient/5.2.1",
       "hashPath": "identitymodel.oidcclient.5.2.1.nupkg.sha512"
+    },
+    "JWT/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jOT1PA95jgf78CqWsKt8hz9Uzv4J39vukzf5nYtfky9N6wl1W4vIXT1CdkQI7zG20HnApEMtmpC/pMtCKr4rvw==",
+      "path": "jwt/11.0.0",
+      "hashPath": "jwt.11.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
