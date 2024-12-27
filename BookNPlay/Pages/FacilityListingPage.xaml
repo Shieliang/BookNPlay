@@ -10,6 +10,10 @@
         <vm:FacilityListingViewModel />
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Dashboard"
+            Command="{Binding NavigateToDashboardCommand}" />
+    </ContentPage.ToolbarItems>
     <CollectionView ItemsSource="{Binding Facilities}">
         <CollectionView.ItemTemplate>
             <DataTemplate>

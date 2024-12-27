@@ -19,10 +19,12 @@ namespace BookNPlay.ViewModels
         private Color feedbackColor = Colors.Black;
 
         public ICommand ResetPasswordCommand { get; }
+        public ICommand NavigateToLoginCommand { get; }
 
         public ResetPasswordViewModel()
         {
             ResetPasswordCommand = new AsyncRelayCommand(OnResetPassword);
+            NavigateToLoginCommand = new Command(ExecuteNavigateToLogin);
         }
 
         private async Task OnResetPassword()
@@ -64,6 +66,11 @@ namespace BookNPlay.ViewModels
                 FeedbackColor = Colors.Red;
                 Feedback = $"An error occurred: {ex.Message}";
             }
+        }
+        private async void ExecuteNavigateToLogin()
+        {
+            // Use the MAUI Shell navigation
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }

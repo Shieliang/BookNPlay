@@ -10,6 +10,11 @@
         <vm:BookingTrackerViewModel />
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Dashboard"
+        Command="{Binding NavigateToDashboardCommand}" />
+    </ContentPage.ToolbarItems>
+    
     <ScrollView>
         <VerticalStackLayout Padding="20">
 

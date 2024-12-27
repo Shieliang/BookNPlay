@@ -9,6 +9,11 @@
         <vm:BookingViewModel />
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back"
+            Command="{Binding NavigateToFacilityListingCommand}" />
+    </ContentPage.ToolbarItems>
+        
     <StackLayout Padding="20" Spacing="15">
         <Label Text="{Binding FacilityName}" FontSize="20" />
 

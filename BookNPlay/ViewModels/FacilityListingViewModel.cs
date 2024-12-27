@@ -8,6 +8,7 @@ using MongoDB.Driver;
 using BookNPlay.Models;
 using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics;
+using System.Windows.Input;
 
 namespace BookNPlay.ViewModels
 {
@@ -17,12 +18,14 @@ namespace BookNPlay.ViewModels
         public ObservableCollection<FacilityListingModel> Facilities { get; private set; } = new();
         public IAsyncRelayCommand LoadFacilitiesCommand { get; }
         public IRelayCommand<FacilityListingModel> BookFacilityCommand { get; }
+        public ICommand NavigateToDashboardCommand { get; }
         public FacilityListingViewModel() {
             // Initialize MongoDB connection directly here
             _facilityCollection = InitializeMongoConnection();
             // Command to load facilities
             LoadFacilitiesCommand = new AsyncRelayCommand(LoadFacilitiesAsync);
             BookFacilityCommand = new RelayCommand<FacilityListingModel>(OnBookFacility);
+            NavigateToDashboardCommand = new Command(ExecuteNavigateToDashboard);
         }
         private IMongoCollection<FacilityListingModel> InitializeMongoConnection()
         {
@@ -89,6 +92,10 @@ namespace BookNPlay.ViewModels
                 Debug.WriteLine("Attempted to book a null facility.");
             }
         }
-
+        private async void ExecuteNavigateToDashboard()
+        {
+            // Use the MAUI Shell navigation system
+            await Shell.Current.GoToAsync("//Dashboard");
+        }
     }
 }

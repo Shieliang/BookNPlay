@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BookNPlay.Models;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace BookNPlay.ViewModels
 {
@@ -48,6 +49,7 @@ namespace BookNPlay.ViewModels
     };
 
         public IRelayCommand SubmitBookingCommand { get; }
+        public ICommand NavigateToFacilityListingCommand { get; }
 
         // Constructor
         public BookingViewModel()
@@ -55,6 +57,7 @@ namespace BookNPlay.ViewModels
             SelectedDate = DateTime.Now;
             SelectedTimeSlot = TimeSlots[0];
             SubmitBookingCommand = new RelayCommand(OnSubmitBooking);
+            NavigateToFacilityListingCommand = new Command(ExecuteNavigateToFacilityListing);
         }
 
         private async void OnSubmitBooking()
@@ -96,6 +99,11 @@ namespace BookNPlay.ViewModels
             {
                 Console.WriteLine($"Error submitting booking: {ex.Message}");
             }
+        }
+        private async void ExecuteNavigateToFacilityListing()
+        {
+            // Use MAUI Shell to navigate back
+            await Shell.Current.GoToAsync("//FacilityListingPage");
         }
     }
 }
