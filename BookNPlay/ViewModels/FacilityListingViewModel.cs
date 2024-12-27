@@ -68,16 +68,15 @@ namespace BookNPlay.ViewModels
                 try
                 {
                     // Example: Navigate to Booking Page and pass selected facility as parameter
-                    var bookingPage = new BookNPlay.Pages.BookingPage(); // Assuming you have a BookingPage
                     var viewModel = new BookingViewModel
                     {
                         // Set the selected facility details for booking
-                        FacilityName = facility.FacilityName,
-                        FacilityId = facility.Id,
+                        Facility_Name = facility.FacilityName,
+                        Facility_Id = facility.Id.ToString(),
                     };
 
                     // Bind the ViewModel to the page (if you are using MVVM)
-                    bookingPage.BindingContext = viewModel;
+                    var bookingPage = new BookNPlay.Pages.BookingPage(viewModel);
 
                     // Navigate to the BookingPage
                     await App.Current.MainPage.Navigation.PushAsync(bookingPage);

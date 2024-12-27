@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using BookNPlay.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using MongoDB.Bson;
 
 namespace BookNPlay.ViewModels
 {
@@ -16,10 +17,10 @@ namespace BookNPlay.ViewModels
     {
         // Booking form properties
         [ObservableProperty]
-        private string facilityName;
+        private string facility_Name;
 
         [ObservableProperty]
-        private string facilityId;
+        private string facility_Id;
 
         [ObservableProperty]
         private string userName;
@@ -39,14 +40,7 @@ namespace BookNPlay.ViewModels
         private string phoneNumber;
 
         // Time slots for picker
-        public ObservableCollection<string> TimeSlots { get; set; } = new ObservableCollection<string>
-    {
-        "10:00 AM - 11:00 AM",
-        "11:00 AM - 12:00 PM",
-        "12:00 PM - 1:00 PM",
-        "1:00 PM - 2:00 PM",
-        "2:00 PM - 3:00 PM"
-    };
+        public ObservableCollection<string> BookingTimeSlots { get; set; } = new ObservableCollection<string>();
 
         public IRelayCommand SubmitBookingCommand { get; }
         public ICommand NavigateToFacilityListingCommand { get; }
@@ -55,9 +49,9 @@ namespace BookNPlay.ViewModels
         public BookingViewModel()
         {
             SelectedDate = DateTime.Now;
-            SelectedTimeSlot = TimeSlots[0];
             SubmitBookingCommand = new RelayCommand(OnSubmitBooking);
             NavigateToFacilityListingCommand = new Command(ExecuteNavigateToFacilityListing);
+            
         }
 
         private async void OnSubmitBooking()
@@ -68,8 +62,8 @@ namespace BookNPlay.ViewModels
                 string actualUserId = await SecureStorage.GetAsync("user_id");
                 var booking = new BookingModel
                 {
-                    FacilityId = FacilityId, // Example facility ID (you'll likely get this dynamically)
-                    FacilityName = FacilityName, // Example facility name
+                    FacilityId = facility_Id, // Example facility ID (you'll likely get this dynamically)
+                    FacilityName = facility_Name, // Example facility name
                     Time = SelectedTimeSlot,
                     Date = SelectedDate,
                     UserName = UserName,
@@ -98,6 +92,32 @@ namespace BookNPlay.ViewModels
             catch (Exception ex)
             {
                 Console.WriteLine($"Error submitting booking: {ex.Message}");
+            }
+        }
+        public async void LoadBookingTimeSlots()
+        {
+            try
+            {
+                var client = new MongoClient("mongodb+srv://shieliang22:shieliang2002@booknplay.vtags.mongodb.net/?retryWrites=true&w=majority&appName=BookNPlay");
+                var database = client.GetDatabase("FacilityDB");
+                var collection = database.GetCollection<FacilityListingModel>("Facility");
+
+                var filter = Builders<FacilityListingModel>.Filter.Eq("_id", ObjectId.Parse(facility_Id));
+                var facility = await collection.Find(filter).FirstOrDefaultAsync();
+
+                if (facility != null)
+                {
+                    BookingTimeSlots.Clear();
+                    foreach (var slot in facility.BookingTimeSlots)
+                    {
+                        string formattedSlot = $"{slot.StartTime} - {slot.EndTime}";
+                        BookingTimeSlots.Add(formattedSlot);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading booking time slots: {ex.Message}");
             }
         }
         private async void ExecuteNavigateToFacilityListing()

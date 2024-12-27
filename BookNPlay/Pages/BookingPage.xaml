@@ -13,31 +13,35 @@
         <ToolbarItem Text="Back"
             Command="{Binding NavigateToFacilityListingCommand}" />
     </ContentPage.ToolbarItems>
-        
-    <StackLayout Padding="20" Spacing="15">
-        <Label Text="{Binding FacilityName}" FontSize="20" />
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <Label Text="{Binding Facility_Name}" FontSize="20" />
+            <Label Text="{Binding Facility_Id}" FontSize="20" />
 
-        <!-- Name -->
-        <Entry Placeholder="Enter Name" Text="{Binding UserName}" />
+            <!-- Name -->
+            <Entry Placeholder="Enter Name" Text="{Binding UserName}" />
 
-        <!-- Student ID -->
-        <Entry Placeholder="Enter Student ID" Text="{Binding StudentId}" Keyboard="Numeric" />
+            <!-- Student ID -->
+            <Entry Placeholder="Enter Student ID" Text="{Binding StudentId}" Keyboard="Numeric" />
 
-        <!-- Student Email -->
-        <Entry Placeholder="Enter Student Email" Text="{Binding StudentEmail}" Keyboard="Email" />
+            <!-- Student Email -->
+            <Entry Placeholder="Enter Student Email" Text="{Binding StudentEmail}" Keyboard="Email" />
 
-        <Entry Placeholder="Enter PhoneNumber" Text="{Binding PhoneNumber}" Keyboard="Telephone" />
+            <Entry Placeholder="Enter PhoneNumber" Text="{Binding PhoneNumber}" Keyboard="Telephone" />
 
-        <!-- Date Picker -->
-        <Label Text="Select a Date" FontSize="20" />
-        <DatePicker Date="{Binding SelectedDate}" />
-        
-        <!-- Time Picker -->
-        <Picker Title="Select Time Slot" ItemsSource="{Binding TimeSlots}" SelectedItem="{Binding SelectedTimeSlot,Mode=TwoWay}">
-        </Picker>
+            <!-- Date Picker -->
+            <Label Text="Select a Date" FontSize="20" />
+            <DatePicker Date="{Binding SelectedDate}" />
 
-        <!-- Submit Button -->
-        <Button Text="Submit Booking" Command="{Binding SubmitBookingCommand}" />
+            <StackLayout Padding="20">
+                <Label Text="Select a Booking Slot:" FontSize="Medium" />
+                <Picker ItemsSource="{Binding BookingTimeSlots}" 
+                SelectedItem="{Binding SelectedTimeSlot}" />
+            </StackLayout>
 
-    </StackLayout>
+            <!-- Submit Button -->
+            <Button Text="Submit Booking" Command="{Binding SubmitBookingCommand}" />
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
