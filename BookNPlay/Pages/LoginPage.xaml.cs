@@ -12,6 +12,14 @@ public partial class LoginPage : ContentPage
         BindingContext = viewModel;
     }
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // Resetting specific UI elements directly
+        FeedbackLabel.Text = string.Empty; // Assuming FeedbackLabel is your Label
+    }
+
     private async void OnLoginButtonTapped(object sender, EventArgs e)
     {
         // This method will handle the tap animation

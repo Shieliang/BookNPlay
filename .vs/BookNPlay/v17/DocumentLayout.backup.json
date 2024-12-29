@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\models\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\models\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\bookingtrackerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\bookingtrackerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingtrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingtrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -75,92 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookingModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\Models\\BookingModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
-              "RelativeToolTip": "BookNPlay\\Models\\BookingModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:53:34.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookingTrackerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingTrackerViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\BookingTrackerViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingTrackerViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\BookingTrackerViewModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:53:03.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookingTrackerPage.xaml",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "RelativeToolTip": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "BookNPlay\\Pages\\Dashboard.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-27T09:52:50.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookingPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:48:58.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FacilityListingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAewEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T07:52:26.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookingPage.xaml",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingPage.xaml",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
-              "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-27T07:52:10.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAIA9wEAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T01:33:22.514Z",
+              "WhenOpened": "2024-12-29T07:46:19.966Z",
               "EditorCaption": ""
             }
           ]
