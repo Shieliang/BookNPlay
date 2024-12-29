@@ -2,62 +2,73 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookNPlay.Pages.LoginPage"
-             Title="LoginPage"
-             BackgroundColor="White">
+             BackgroundColor="#fffdef">
+
 
     <ScrollView>
         <VerticalStackLayout
-        Padding="30" 
-        Spacing="20" 
-        VerticalOptions="CenterAndExpand" 
-        HorizontalOptions="Center">
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Spacing="20"
+            Padding="30">
 
-            <!-- App Logo -->
-            <Image
-            Source="bnplogo.png"
-            SemanticProperties.Description="App logo"
-            HeightRequest="300"
-            HorizontalOptions="Center" />
+
+            <!-- Logo -->
+            <Image x:Name="LogoImage"
+                   Source="bnplogo.png"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   HorizontalOptions="Center" />
+
 
             <!-- Welcome Text -->
             <Label
             x:Name="WelcomeLabel"
-            Text="Book N' Play"
-            FontFamily="Montserrat"
-            FontSize="28"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            TextColor="#001f3f" />
+            Text="Welcome to Book N' Play!"
+            FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#ffa74c"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="DynaPuff" />
 
-            <!-- Username Entry -->
+
+            <!-- Email Entry -->
             <Entry
-            x:Name="EmailEntry"
-            Placeholder="Email"
-            FontSize="18"
-            BackgroundColor="Transparent" 
-            TextColor="#001f3f"
-            HeightRequest="40"
-            HorizontalOptions="FillAndExpand"
-            Text="{Binding Email}" />
+    x:Name="EmailEntry"
+    Placeholder="Email"
+    FontSize="18"
+    BackgroundColor="#fffdef" 
+    TextColor="#000000"
+    PlaceholderColor="#ffa5d0"
+    HeightRequest="50"
+    HorizontalOptions="FillAndExpand"
+    HorizontalTextAlignment="Center"
+    Text="{Binding Email}"
+    FontFamily="DynaPuff"
+    Margin="10,0" />
 
             <!-- Password Entry -->
             <Entry
-            x:Name="PasswordEntry"
-            Placeholder="Password"
-            FontSize="18"
-            IsPassword="True"
-            BackgroundColor="Transparent" 
-            TextColor="#001f3f"
-            HeightRequest="40"
-            HorizontalOptions="FillAndExpand"
-            Text="{Binding Password}" />
+    x:Name="PasswordEntry"
+    Placeholder="Password"
+    FontSize="18"
+    IsPassword="True"
+    BackgroundColor="#fffdef" 
+    TextColor="#000000"
+    PlaceholderColor="#ffa5d0"
+    HeightRequest="50"
+    HorizontalOptions="FillAndExpand"
+    HorizontalTextAlignment="Center"
+    Text="{Binding Password}"
+    FontFamily="DynaPuff"
+    Margin="10,0" />
 
             <!-- Login Button -->
             <Button
             x:Name="LoginButton"
             Text="Login"
             FontSize="20"
-            FontFamily= "Roboto" 
+            FontFamily= "DynaPuff" 
             TextColor="White"
             Command="{Binding LoginCommand}"
             HeightRequest="50"
@@ -65,8 +76,8 @@
             CornerRadius="10" >
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#001f3f" Offset="0.0" />
-                        <GradientStop Color="#48997e" Offset="1.0" />
+                        <GradientStop Color="#ffa74c" Offset="0.0" />
+                        <GradientStop Color="#ffdd21" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
 
@@ -80,7 +91,8 @@
             <Label
             Text="Forgot Password?"
             FontSize="14"
-            TextColor="#48997e"
+			FontFamily= "DynaPuff"
+            TextColor="#ffa74c"
             HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
@@ -92,11 +104,11 @@
             x:Name="SignUpButton"
             Text="Sign Up"
             FontSize="18"
-            FontFamily= "Roboto" 
+            FontFamily= "DynaPuff"
             BackgroundColor="Transparent"
-            TextColor="Black"
+            TextColor="#ffa5d0"
             BorderWidth="1"
-            BorderColor="#3b5998"
+            BorderColor="#ffa74c"
             Command="{Binding NavigateToSignUpCommand}" 
             HeightRequest="50"
             HorizontalOptions="FillAndExpand"
@@ -110,8 +122,8 @@
             <!-- Moved 'or' below the line -->
             <Label Text="or"
            FontSize="16"
-               FontFamily= "Roboto" 
-           TextColor="#48997e"
+               FontFamily= "DynaPuff"
+           TextColor="#ffa74c"
            HorizontalTextAlignment="Center"
            VerticalOptions="Center"
            WidthRequest="40" />
@@ -121,9 +133,9 @@
 
                 <!-- Continue with Facebook Button -->
                 <Button Text="Continue With Facebook"
-                TextColor="Black"
+                TextColor="black"
                 FontSize="14"
-                FontFamily= "Roboto" 
+                FontFamily= "DynaPuff"
                 BackgroundColor="Transparent"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
@@ -135,9 +147,9 @@
 
                 <!-- Continue with Google Button -->
                 <Button Text="Continue With Google"
-                TextColor="Black"
+                TextColor="black"
                 FontSize="14"
-                FontFamily= "Roboto" 
+                FontFamily= "DynaPuff"
                 BackgroundColor="Transparent"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
@@ -149,9 +161,9 @@
 
                 <!-- Continue with X Button -->
                 <Button Text="Continue With X"
-                TextColor="Black"
+                TextColor="black"
                 FontSize="14"
-                FontFamily= "Roboto" 
+                FontFamily= "DynaPuff" 
                 BackgroundColor="Transparent"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"

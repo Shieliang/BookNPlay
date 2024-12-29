@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookNPlay.Pages.SignUpPage"
              Title="SignUpPage"
-             BackgroundColor="White">
+             BackgroundColor="#fffdef">
 
     <ScrollView>
         <VerticalStackLayout
@@ -13,33 +13,33 @@
         HorizontalOptions="Center">
 
             <!-- App Logo -->
-            <Image 
-            Source="bnplogo.png" 
-            SemanticProperties.Description="App logo"
-            HeightRequest="300"
-            HorizontalOptions="Center"
-            />
+            <Image x:Name="LogoImage"
+       Source="bnplogo.png"
+       HeightRequest="300"
+       WidthRequest="300"
+       HorizontalOptions="Center" />
 
             <!-- Welcome Text -->
             <Label 
             x:Name="WelcomeLabel"
             Text ="Create A User Account"
-            FontFamily="Montserrat"
+            FontFamily="DynaPuff"
             FontSize="28"
             FontAttributes="Bold"
-            TextColor="#001f3f"
+            TextColor="#ffa74c"
             HorizontalOptions="Center" />
 
             <!-- Username Entry with Border -->
-            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
                 <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                     <Entry 
                     x:Name="UsernameEntry"
                     Placeholder="Username"
                     FontSize="18"
-                    BackgroundColor="#FFFFFF"
+                    BackgroundColor="#fffdef"
+                        FontFamily="DynaPuff"
                     TextColor="#000000"
-                    PlaceholderColor="Gray"
+                    PlaceholderColor="#ffa5d0"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"
                     Text="{Binding User.Username}" />
@@ -52,14 +52,15 @@
                HorizontalOptions="Start"/>
 
             <!-- Email Entry with Border -->
-            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
                 <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                     <Entry 
                     x:Name="EmailEntry"
                     Placeholder="Email"
                     FontSize="18"
-                    BackgroundColor="Transparent"
-                    PlaceholderColor="Gray"
+                    BackgroundColor="#fffdef"
+                    PlaceholderColor="#ffa5d0"
+                        FontFamily="DynaPuff"
                     TextColor="#000000"
                     Text="{Binding User.Email}"
                     HorizontalOptions="FillAndExpand"
@@ -73,15 +74,17 @@
                HorizontalOptions="Start"/>
 
             <!-- Password Entry with Border -->
-            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
                 <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                     <Entry 
                     x:Name="PasswordEntry"
                     Placeholder="Password"
                     FontSize="18"
                     IsPassword="True"
-                    PlaceholderColor="Gray"
+                        FontFamily="DynaPuff"
+                    PlaceholderColor="#ffa5d0"
                     TextColor="#000000"
+                        BackgroundColor="#fffdef"
                     HeightRequest="40"
                     HorizontalOptions="FillAndExpand"
                     Text="{Binding User.Password}"/>
@@ -95,14 +98,16 @@
                HorizontalOptions="Start"/>
 
             <!-- Confirm Password Entry with Border -->
-            <Border Stroke="Black" StrokeThickness="1" StrokeShape="RoundRectangle 8">
+            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
                 <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                     <Entry 
                     x:Name="ConfirmPasswordEntry"
                     Placeholder="Confirm Password"
+                        FontFamily="DynaPuff"
                     FontSize="18"
                     IsPassword="True"
-                    PlaceholderColor="Gray"
+                    PlaceholderColor="#ffa5d0"
+                        BackgroundColor="#fffdef"
                     TextColor="#000000"
                     HeightRequest="40"
                     HorizontalOptions="FillAndExpand"
@@ -128,8 +133,8 @@
             CornerRadius="10">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#001f3f" Offset="0.0" />
-                        <GradientStop Color="#48997e" Offset="1.0" />
+                        <GradientStop Color="#ffa74c" Offset="0.0" />
+                        <GradientStop Color="#ffdd21" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
@@ -138,7 +143,8 @@
             <Label 
             Text="Already have an account?"
             FontSize="14"
-            TextColor="#48997e"
+            FontFamily= "DynaPuff"
+TextColor="#ffa5d0"
             HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
@@ -151,8 +157,8 @@
             </Grid>
             <Label Text="or"
                FontSize="16"
-               FontFamily="Roboto"
-               TextColor="#48997e"
+                   FontFamily= "DynaPuff"
+TextColor="#ffa74c"
                HorizontalTextAlignment="Center"
                VerticalOptions="Center"
                WidthRequest="40"/>
@@ -164,7 +170,7 @@
                 <Button Text="Sign Up With Facebook"
                     TextColor="Black"
                     FontSize="14"
-                    FontFamily="Roboto"
+                    FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
                     HeightRequest="50"
                     HorizontalOptions="FillAndExpand"
@@ -178,7 +184,7 @@
                 <Button Text="Sign Up With Google"
                     TextColor="Black"
                     FontSize="14"
-                    FontFamily="Roboto"
+                    FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
                     HeightRequest="50"
                     HorizontalOptions="FillAndExpand"
@@ -192,7 +198,7 @@
                 <Button Text="Sign Up With X"
                     TextColor="Black"
                     FontSize="14"
-                    FontFamily="Roboto"
+                    FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
                     HeightRequest="50"
                     HorizontalOptions="FillAndExpand"
