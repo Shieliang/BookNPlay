@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,19 +42,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
-              "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-29T07:46:19.966Z",
-              "EditorCaption": ""
             }
           ]
         }
