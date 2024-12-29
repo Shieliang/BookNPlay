@@ -52,6 +52,9 @@
                                 <!-- Label for Time Slot -->
                                 <Label Text="Time Slot:" FontSize="14" FontAttributes="Bold"/>
                                 <Label Text="{Binding Time}" FontSize="12" />
+
+                                <Label Text="Status:" FontSize="14" FontAttributes="Bold"/>
+                                <Label Text="{Binding Status}" FontSize="12" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>

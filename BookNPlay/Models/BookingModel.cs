@@ -40,6 +40,9 @@ namespace BookNPlay.Models
 
         [BsonElement("PhoneNumber")]
         public string PhoneNumber { get; set; }
+        [BsonElement("Status")]
+        public string Status { get; set; }
+
 
     }
 }

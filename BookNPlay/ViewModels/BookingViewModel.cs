@@ -70,7 +70,8 @@ namespace BookNPlay.ViewModels
                     StudentId = StudentId,
                     StudentName = UserName, // Assuming student name is the same as user name
                     UserID = actualUserId, // Example user ID
-                    PhoneNumber = phoneNumber
+                    PhoneNumber = phoneNumber,
+                    Status = "Pending"
                 };
 
                 // Connect to MongoDB
