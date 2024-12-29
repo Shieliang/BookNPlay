@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using BookNPlay.Models;
+using Auth0.OidcClient;
 
 namespace BookNPlay.ViewModels
 {
@@ -31,11 +32,17 @@ namespace BookNPlay.ViewModels
 
         public ICommand SignUpCommand { get; }
         public ICommand NavigateToLoginCommand { get; }
+        public ICommand GoogleSignUpCommand { get; }
+        public ICommand FacebookSignUpCommand { get; }
+        public ICommand XSignUpCommand { get; }
 
         public SignUpViewModel() {
 
             SignUpCommand = new AsyncRelayCommand(OnSignUp);
             NavigateToLoginCommand = new AsyncRelayCommand(NavigateToLoginAsync);
+            GoogleSignUpCommand = new AsyncRelayCommand(OnGoogleLoginClicked);
+            FacebookSignUpCommand = new AsyncRelayCommand(OnFacebookLoginClicked);
+            XSignUpCommand = new AsyncRelayCommand(OnXLoginClicked);
         }
 
         private async Task OnSignUp()
@@ -121,6 +128,130 @@ namespace BookNPlay.ViewModels
                 Feedback = $"Sign-up failed: {ex.Message}";
             }
 
+        }
+        // Placeholder methods for social login (to be implemented later)
+        private async Task OnGoogleLoginClicked()
+        {
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback",
+                    PostLogoutRedirectUri = "myapp://callback",
+                    Scope = "openid profile email"
+
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "google-oauth2",
+                    audience = "https://dev-ghzmuldobn03le25.us.auth0.com/api/v2/"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Google Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = $"Google Login failed: {loginResult.Error} - {loginResult.ErrorDescription}";
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Exception during Google login: {ex}");
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during Google login: {ex.Message}";
+            }
+        }
+
+        private async Task OnFacebookLoginClicked()
+        {
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback"
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "facebook"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Facebook Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = "Facebook Login failed: " + loginResult.Error;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during Facebook login: {ex.Message}";
+            }
+        }
+
+        private async Task OnXLoginClicked()
+        {
+            try
+            {
+                var auth0Client = new Auth0Client(new Auth0ClientOptions
+                {
+                    Domain = "dev-ghzmuldobn03le25.us.auth0.com",
+                    ClientId = "bo8quj1pxMotyK7KPJK1rNi91dg9MhuU",
+                    RedirectUri = "myapp://callback"
+                });
+
+                var loginResult = await auth0Client.LoginAsync(new
+                {
+                    connection = "twitter"
+                });
+
+                if (!loginResult.IsError)
+                {
+                    string userId = loginResult.User.FindFirst("sub")?.Value;
+
+                    // Store the user ID securely
+                    await SecureStorage.SetAsync("user_id", userId);
+                    FeedbackColor = Colors.Green;
+                    Feedback = "Github Login successful!";
+                    await Shell.Current.GoToAsync("//Dashboard");
+                }
+                else
+                {
+                    FeedbackColor = Colors.Red;
+                    Feedback = "X Login failed: " + loginResult.Error;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                FeedbackColor = Colors.Red;
+                Feedback = $"An error occurred during X login: {ex.Message}";
+            }
         }
 
         // Method to validate email format

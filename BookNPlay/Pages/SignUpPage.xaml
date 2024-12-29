@@ -204,7 +204,7 @@ TextColor="#ffa74c"
                     HorizontalOptions="FillAndExpand"
                     ImageSource="xicon.png"
                     ContentLayout="Left, 10"
-                    Command="{Binding AppleSignUpCommand}"
+                    Command="{Binding XSignUpCommand}"
                     BorderColor="#3b5998"
                     CornerRadius="25"/>
             </HorizontalStackLayout>
