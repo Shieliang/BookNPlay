@@ -7,5 +7,6 @@ public partial class SignUpPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
-	}
+        FeedbackLabel.Text = string.Empty; // Assuming FeedbackLabel is your Label
+    }
 }
