@@ -4,32 +4,80 @@
              x:Class="BookNPlay.Pages.FacilityListingPage"
              xmlns:vm="clr-namespace:BookNPlay.ViewModels"
              Title="FacilityListingPage"
-             BackgroundColor="White">
-    
+             BackgroundColor="#fffdef">
+
     <ContentPage.BindingContext>
         <vm:FacilityListingViewModel />
     </ContentPage.BindingContext>
 
+    <!-- Toolbar -->
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Dashboard"
-            Command="{Binding NavigateToDashboardCommand}" />
+                 Command="{Binding NavigateToDashboardCommand}" />
     </ContentPage.ToolbarItems>
-    <CollectionView ItemsSource="{Binding Facilities}">
+
+
+    <!-- Facility List -->
+    <CollectionView ItemsSource="{Binding Facilities}"
+                    Margin="10"
+                    VerticalOptions="FillAndExpand">
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <StackLayout Padding="10">
-                    <Label Text="{Binding FacilityName}" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
-                    <Label Text="{Binding Location}" FontSize="14" TextColor="Gray"/>
-                    <Label Text="Operation Time:" FontSize="14" TextColor="Black"/>
-                    <Label Text="{Binding OperationTime.Open}" FontSize="14" TextColor="Green"/>
-                    <Label Text="{Binding OperationTime.Close}" FontSize="14" TextColor="Red"/>
-                    <Button Text="Book"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type vm:FacilityListingViewModel}}, Path=BookFacilityCommand}"
-                            CommandParameter="{Binding .}"
-                            BackgroundColor="Blue"
-                            TextColor="White"
-                            CornerRadius="5" />
-                </StackLayout>
+                <Frame Margin="10" Padding="20" CornerRadius="15" BackgroundColor="#fff" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+
+                        <!-- Facility Name -->
+                        <Label Text="{Binding FacilityName}" 
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#ffa74c"
+                               FontFamily="DynaPuff" />
+
+                        <!-- Location -->
+                        <Label Text="{Binding Location}" 
+                               FontSize="16"
+                               TextColor="#666666"
+                               FontFamily="DynaPuff" />
+
+                        <!-- Operation Times -->
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Operation Time:" 
+                                   FontSize="16"
+                                   TextColor="#000000"
+                                   FontFamily="DynaPuff" />
+                            <Label Text="{Binding OperationTime.Open}" 
+                                   FontSize="16"
+                                   TextColor="Green"
+                                   FontFamily="DynaPuff" />
+                            <Label Text="-" 
+                                   FontSize="16"
+                                   TextColor="#000000"
+                                   FontFamily="DynaPuff" />
+                            <Label Text="{Binding OperationTime.Close}" 
+                                   FontSize="16"
+                                   TextColor="Red"
+                                   FontFamily="DynaPuff" />
+                        </HorizontalStackLayout>
+
+                        <!-- Book Button -->
+                        <Button Text="Book"
+                                FontFamily="DynaPuff"
+                                FontSize="18"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:FacilityListingViewModel}}, Path=BookFacilityCommand}"
+                                CommandParameter="{Binding .}"
+                                TextColor="White"
+                                BackgroundColor="#ffa5d0"
+                                HeightRequest="50"
+                                BorderWidth="1"
+BorderColor="#ffa74c"
+                                CornerRadius="10">
+                            
+                        </Button>
+
+              
+
+                    </VerticalStackLayout>
+                </Frame>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>

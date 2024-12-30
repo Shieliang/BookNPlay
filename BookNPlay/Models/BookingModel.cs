@@ -1,11 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookNPlay.Models
 {
@@ -40,9 +35,19 @@ namespace BookNPlay.Models
 
         [BsonElement("PhoneNumber")]
         public string PhoneNumber { get; set; }
+
         [BsonElement("Status")]
         public string Status { get; set; }
 
-
+        // Example of validation logic
+        public bool IsValid()
+        {
+            return !string.IsNullOrEmpty(FacilityId) &&
+                   !string.IsNullOrEmpty(FacilityName) &&
+                   !string.IsNullOrEmpty(UserName) &&
+                   !string.IsNullOrEmpty(StudentId) &&
+                   !string.IsNullOrEmpty(PhoneNumber) &&
+                   Date != default;
+        }
     }
 }

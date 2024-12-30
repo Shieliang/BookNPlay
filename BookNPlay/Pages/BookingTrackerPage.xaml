@@ -3,58 +3,89 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookNPlay.Pages.BookingTrackerPage"
              xmlns:vm="clr-namespace:BookNPlay.ViewModels"
-             Title="BookingTrackerPage">
+             Title="BookingTrackerPage"
+             BackgroundColor="#fffdef">
 
     <ContentPage.BindingContext>
-        <!-- Set the BindingContext to BookingTrackerViewModel -->
         <vm:BookingTrackerViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Dashboard"
-        Command="{Binding NavigateToDashboardCommand}" />
+                    Command="{Binding NavigateToDashboardCommand}" />
     </ContentPage.ToolbarItems>
-    
+
     <ScrollView>
         <VerticalStackLayout Padding="20">
 
-            <Label 
-                Text="Booking Tracker"
-                FontSize="24"
-                HorizontalOptions="Center" 
-                VerticalOptions="Start" />
+            <Label Text="Booking Tracker"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#ffa74c"
+                   FontFamily="DynaPuff"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" />
 
             <CollectionView x:Name="BookingsCollectionView"
                             ItemsSource="{Binding Booking}"
                             SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Gray" Padding="10" Margin="5">
+                        <Frame BorderColor="Gray" Padding="10" Margin="5" BackgroundColor="#fffdef">
                             <VerticalStackLayout>
-                                <!-- Add labels for each field -->
-
                                 <!-- Label for Booking ID -->
-                                <Label Text="Booking ID:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding Id}" FontSize="16" />
+                                <Label Text="Booking ID:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding Id}"
+                                       FontSize="16"
+                                       TextColor="Black" />
 
-                                <!-- Label for UserName -->
-                                <Label Text="User Name:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding UserName}" FontSize="16" />
+                                <!-- Label for User Name -->
+                                <Label Text="User Name:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding UserName}"
+                                       FontSize="16"
+                                       TextColor="Black" />
 
                                 <!-- Label for Facility Name -->
-                                <Label Text="Facility Name:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding FacilityName}" FontSize="14" />
+                                <Label Text="Facility Name:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding FacilityName}"
+                                       FontSize="14"
+                                       TextColor="Black" />
 
                                 <!-- Label for Date -->
-                                <Label Text="Booking Date:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding Date, StringFormat='{0:MMM dd, yyyy}'}" FontSize="14" />
+                                <Label Text="Booking Date:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding Date, StringFormat='{0:MMM dd, yyyy}'}"
+                                       FontSize="14"
+                                       TextColor="Black" />
 
                                 <!-- Label for Time Slot -->
-                                <Label Text="Time Slot:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding Time}" FontSize="12" />
+                                <Label Text="Time Slot:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding Time}"
+                                       FontSize="12"
+                                       TextColor="Black" />
 
-                                <Label Text="Status:" FontSize="14" FontAttributes="Bold"/>
-                                <Label Text="{Binding Status}" FontSize="12" />
+                                <!-- Label for Status -->
+                                <Label Text="Status:"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffa74c" />
+                                <Label Text="{Binding Status}"
+                                       FontSize="12"
+                                       TextColor="Black" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
@@ -64,3 +95,4 @@
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
+
