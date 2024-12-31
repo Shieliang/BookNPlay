@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-31T03:52:48.928</Modified>
+      <Modified>2024-12-31T06:21:28.378</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.dll">
       <PackagePath>BookNPlay.dll</PackagePath>
-      <Modified>2024-12-31T03:52:48.364</Modified>
+      <Modified>2024-12-31T06:21:27.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookNPlay.exe</PackagePath>
-      <Modified>2024-12-31T03:52:48.371</Modified>
+      <Modified>2024-12-31T06:21:27.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

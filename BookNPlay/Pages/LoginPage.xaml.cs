@@ -10,21 +10,16 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
         BindingContext = viewModel;
+        AnimateLogo();
     }
 
-    protected override async void OnAppearing()
+    protected override async void OnDisappearing()
     {
-        base.OnAppearing();
+        base.OnDisappearing();
 
-        // Resetting specific UI elements directly
-        FeedbackLabel.Text = string.Empty; // Assuming FeedbackLabel is your Label
-
-        // Debugging to check if OnAppearing is called
-        Debug.WriteLine("LoginPage Appearing");
-
-        // Perform the logo animation here
-        await AnimateLogo();
-
+        // Resetting feedback label when the page disappears (logout or navigation)
+        FeedbackLabel.Text = string.Empty;
+    
     }
 
     private async Task AnimateLogo()
