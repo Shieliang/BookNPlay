@@ -1,12 +1,14 @@
+using BookNPlay.ViewModels;
 using System.Diagnostics;
 
 namespace BookNPlay.Pages;
 
 public partial class ResetPasswordPage : ContentPage
 {
-	public ResetPasswordPage()
+	public ResetPasswordPage(ResetPasswordViewModel viewModel)
 	{
 		InitializeComponent();
+        BindingContext = viewModel;
 	}
 
     protected override async void OnAppearing()
