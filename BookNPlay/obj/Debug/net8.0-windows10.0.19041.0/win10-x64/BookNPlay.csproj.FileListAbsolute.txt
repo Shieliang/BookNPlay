@@ -431,3 +431,4 @@ C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-wi
 C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\DynaPuff-Medium.ttf
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\DynaPuff-Medium.ttf

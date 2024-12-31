@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,10 +85,6 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BookingTrackerPage.xaml",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
               "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-30T14:06:03.229Z",
               "EditorCaption": ""
@@ -111,8 +107,7 @@
               "RelativeToolTip": "BookNPlay\\Models\\TokenResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T13:56:02.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:56:02.789Z"
             },
             {
               "$type": "Document",
@@ -124,8 +119,7 @@
               "RelativeToolTip": "BookNPlay\\Models\\BookingModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T13:55:47.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:55:47.748Z"
             },
             {
               "$type": "Document",
@@ -137,8 +131,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T13:53:49.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:53:49.324Z"
             },
             {
               "$type": "Document",
@@ -150,8 +143,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:39:42.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:39:42.072Z"
             },
             {
               "$type": "Document",
@@ -163,8 +155,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:33:32.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:33:32.542Z"
             },
             {
               "$type": "Document",
@@ -176,8 +167,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\FacilityListingPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:22:50.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:22:50.891Z"
             },
             {
               "$type": "Document",
@@ -189,8 +179,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\ResetPasswordPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:12:51.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:12:51.666Z"
             },
             {
               "$type": "Document",
@@ -202,8 +191,11 @@
               "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAADAAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:12:24.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:12:24.819Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

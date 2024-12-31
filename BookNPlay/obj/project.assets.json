@@ -51042,24 +51042,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Michelle\\.nuget\\packages\\": {},
+    "C:\\Users\\shiel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\BookNPlay.csproj",
+      "projectUniqueName": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\BookNPlay.csproj",
       "projectName": "BookNPlay",
-      "projectPath": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\BookNPlay.csproj",
-      "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\obj\\",
+      "projectPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\BookNPlay.csproj",
+      "packagesPath": "C:\\Users\\shiel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
