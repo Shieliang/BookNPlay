@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\",
+  "WorkspaceRootPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\bookingtrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingtrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingtrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\models\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\models\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\models\\bookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\resetpasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\resetpasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\resetpasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,12 +50,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -89,18 +85,14 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SignUpPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\SignUpPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\SignUpPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\SignUpPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\SignUpPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\SignUpPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\SignUpPage.xaml",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAJ4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-31T07:06:38.297Z",
               "EditorCaption": ""
@@ -109,35 +101,33 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAKsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:39:42.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:39:42.072Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "BookingTrackerPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingTrackerPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\BookingTrackerPage.xaml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T14:06:03.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T14:06:03.229Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "BookingModel.cs",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
               "RelativeDocumentMoniker": "BookNPlay\\Models\\BookingModel.cs",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\BookingModel.cs",
               "RelativeToolTip": "BookNPlay\\Models\\BookingModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -147,9 +137,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml.cs",
               "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,9 +149,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "BookingPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -171,35 +161,33 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FacilityListingPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\FacilityListingPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\FacilityListingPage.xaml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:22:50.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:22:50.891Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAEcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-30T13:12:24.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T13:12:24.819Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "TokenResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Models\\TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\TokenResponse.cs",
               "RelativeDocumentMoniker": "BookNPlay\\Models\\TokenResponse.cs",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Models\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Models\\TokenResponse.cs",
               "RelativeToolTip": "BookNPlay\\Models\\TokenResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,9 +197,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ResetPasswordPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\ResetPasswordPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\ResetPasswordPage.xaml",
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\ResetPasswordPage.xaml",
-              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\ResetPasswordPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\ResetPasswordPage.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\ResetPasswordPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",

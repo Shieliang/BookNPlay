@@ -12,20 +12,13 @@ public partial class LoginPage : ContentPage
         BindingContext = viewModel;
     }
 
-    protected override async void OnAppearing()
+    protected override void OnDisappearing()
     {
-        base.OnAppearing();
+        base.OnDisappearing();
 
-        // Resetting specific UI elements directly
-        FeedbackLabel.Text = string.Empty; // Assuming FeedbackLabel is your Label
-
-        // Debugging to check if OnAppearing is called
-        Debug.WriteLine("LoginPage Appearing");
-
-
+        // Resetting feedback label when the page disappears (logout or navigation)
+        FeedbackLabel.Text = string.Empty;
     }
-
-   
 
 
     private async void OnLoginButtonTapped(object sender, EventArgs e)

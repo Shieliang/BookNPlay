@@ -9,19 +9,12 @@ public partial class ResetPasswordPage : ContentPage
 		InitializeComponent();
 	}
 
-    protected override async void OnAppearing()
+    protected override void OnDisappearing()
     {
-        base.OnAppearing();
+        base.OnDisappearing();
 
-        // Resetting specific UI elements directly
-        FeedbackLabel.Text = string.Empty; // Assuming FeedbackLabel is your Label
-
-        // Debugging to check if OnAppearing is called
-        Debug.WriteLine("LoginPage Appearing");
-
-       
-
+        // Resetting feedback label when the page disappears (logout or navigation)
+        FeedbackLabel.Text = string.Empty;
     }
 
-    
 }
