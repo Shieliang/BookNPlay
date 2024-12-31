@@ -16,7 +16,14 @@
     </ContentPage.ToolbarItems>
 
     <ScrollView>
+        
         <VerticalStackLayout Padding="20">
+            <!-- App Logo -->
+            <Image x:Name="LogoImage"
+Source="bnplogo.png"
+HeightRequest="300"
+WidthRequest="300"
+HorizontalOptions="Center" />
 
             <Label Text="Booking Tracker"
                    FontSize="24"

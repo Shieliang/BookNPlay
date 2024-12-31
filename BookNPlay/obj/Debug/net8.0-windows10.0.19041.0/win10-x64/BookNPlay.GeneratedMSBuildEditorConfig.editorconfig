@@ -15,7 +15,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookNPlay
-build_property.ProjectDir = C:\Users\shiel\source\repos\BookNPlay\BookNPlay\
+build_property.ProjectDir = C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotExportsEnabled = 
@@ -27,67 +27,67 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/App.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/AppShell.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/BookingPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/BookingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.BookingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\BookingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\BookingPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/BookingTrackerPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/BookingTrackerPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.BookingTrackerPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\BookingTrackerPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\BookingTrackerPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/Dashboard.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/Dashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.Dashboard.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Dashboard.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Dashboard.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/FacilityListingPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/FacilityListingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.FacilityListingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\FacilityListingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\FacilityListingPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/LoginPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/ResetPasswordPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/ResetPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.ResetPasswordPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ResetPasswordPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ResetPasswordPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Pages/SignUpPage.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Pages/SignUpPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Pages.SignUpPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\SignUpPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\SignUpPage.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Resources/Styles/Colors.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/shiel/source/repos/BookNPlay/BookNPlay/Resources/Styles/Styles.xaml]
+[C:/Users/Michelle/source/repos/Shieliang/BookNPlay/BookNPlay/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookNPlay.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

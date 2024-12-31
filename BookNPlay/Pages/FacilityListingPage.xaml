@@ -35,9 +35,8 @@
 
                         <!-- Location -->
                         <Label Text="{Binding Location}" 
-                               FontSize="16"
-                               TextColor="#666666"
-                               FontFamily="DynaPuff" />
+                               FontSize="12"
+                               TextColor="#666666" />
 
                         <!-- Operation Times -->
                         <HorizontalStackLayout Spacing="5">
