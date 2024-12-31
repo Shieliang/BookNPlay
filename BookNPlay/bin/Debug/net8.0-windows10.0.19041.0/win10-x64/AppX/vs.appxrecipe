@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-12-31T06:32:14.992</Modified>
+      <Modified>2024-12-31T07:11:34.783</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-12-30T14:12:01.396</Modified>
+      <Modified>2024-12-31T06:46:11.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.runtimeconfig.json">
       <PackagePath>BookNPlay.runtimeconfig.json</PackagePath>
-      <Modified>2024-12-30T14:12:01.140</Modified>
+      <Modified>2024-12-31T06:46:11.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.dll">
       <PackagePath>BookNPlay.dll</PackagePath>
-      <Modified>2024-12-30T14:11:59.843</Modified>
+      <Modified>2024-12-31T07:11:32.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookNPlay.exe</PackagePath>
-      <Modified>2024-12-30T14:11:59.898</Modified>
+      <Modified>2024-12-31T07:11:32.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -100,259 +100,259 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\apicon.scale-100.png">
       <PackagePath>apicon.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.909</Modified>
+      <Modified>2024-12-31T06:45:06.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.909</Modified>
+      <Modified>2024-12-31T06:45:06.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.909</Modified>
+      <Modified>2024-12-31T06:45:06.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.908</Modified>
+      <Modified>2024-12-31T06:45:06.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.908</Modified>
+      <Modified>2024-12-31T06:45:06.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.915</Modified>
+      <Modified>2024-12-31T06:45:06.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.915</Modified>
+      <Modified>2024-12-31T06:45:06.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.915</Modified>
+      <Modified>2024-12-31T06:45:06.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.914</Modified>
+      <Modified>2024-12-31T06:45:06.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.915</Modified>
+      <Modified>2024-12-31T06:45:06.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.916</Modified>
+      <Modified>2024-12-31T06:45:06.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.915</Modified>
+      <Modified>2024-12-31T06:45:06.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.911</Modified>
+      <Modified>2024-12-31T06:45:06.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.911</Modified>
+      <Modified>2024-12-31T06:45:06.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.911</Modified>
+      <Modified>2024-12-31T06:45:06.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.911</Modified>
+      <Modified>2024-12-31T06:45:06.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.911</Modified>
+      <Modified>2024-12-31T06:45:06.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.912</Modified>
+      <Modified>2024-12-31T06:45:06.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.912</Modified>
+      <Modified>2024-12-31T06:45:06.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.912</Modified>
+      <Modified>2024-12-31T06:45:06.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.912</Modified>
+      <Modified>2024-12-31T06:45:06.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.912</Modified>
+      <Modified>2024-12-31T06:45:06.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.913</Modified>
+      <Modified>2024-12-31T06:45:06.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.910</Modified>
+      <Modified>2024-12-31T06:45:06.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.910</Modified>
+      <Modified>2024-12-31T06:45:06.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.910</Modified>
+      <Modified>2024-12-31T06:45:06.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.910</Modified>
+      <Modified>2024-12-31T06:45:06.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.909</Modified>
+      <Modified>2024-12-31T06:45:06.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\badminton.scale-100.png">
       <PackagePath>badminton.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\basketball.scale-100.png">
       <PackagePath>basketball.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bnp.scale-100.png">
       <PackagePath>bnp.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.908</Modified>
+      <Modified>2024-12-31T06:45:06.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bnplogo.scale-100.png">
       <PackagePath>bnplogo.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.907</Modified>
+      <Modified>2024-12-31T06:45:06.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.907</Modified>
+      <Modified>2024-12-31T06:45:06.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.907</Modified>
+      <Modified>2024-12-31T06:45:06.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.907</Modified>
+      <Modified>2024-12-31T06:45:06.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.906</Modified>
+      <Modified>2024-12-31T06:45:06.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fbicon.scale-100.png">
       <PackagePath>fbicon.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\football.scale-100.png">
       <PackagePath>football.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ggicon.scale-100.png">
       <PackagePath>ggicon.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gym.scale-100.png">
       <PackagePath>gym.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.908</Modified>
+      <Modified>2024-12-31T06:45:06.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\netball.scale-100.png">
       <PackagePath>netball.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.917</Modified>
+      <Modified>2024-12-31T06:45:06.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\snooker.scale-100.png">
       <PackagePath>snooker.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.908</Modified>
+      <Modified>2024-12-31T06:45:06.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\xicon.scale-100.png">
       <PackagePath>xicon.scale-100.png</PackagePath>
-      <Modified>2024-12-30T14:10:12.907</Modified>
+      <Modified>2024-12-31T06:45:06.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\source\repos\Shieliang\BookNPlay\BookNPlay\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookNPlay.deps.json">
       <PackagePath>BookNPlay.deps.json</PackagePath>
-      <Modified>2024-12-30T14:12:00.941</Modified>
+      <Modified>2024-12-31T06:46:11.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michelle\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

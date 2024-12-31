@@ -133,7 +133,7 @@
 
                 <!-- Continue with Facebook Button -->
                 <Button Text="Continue With Facebook"
-                TextColor="black"
+                TextColor="#ffa5d0"
                 FontSize="14"
                 FontFamily= "DynaPuff"
                 BackgroundColor="Transparent"
@@ -142,12 +142,13 @@
                 ImageSource="fbicon.png"
                 ContentLayout="Left, 10"
                 Command="{Binding FacebookLoginCommand}"
-                BorderColor="#3b5998"
+                BorderWidth="1"
+BorderColor="#ffa74c"
                 CornerRadius="25" />
 
                 <!-- Continue with Google Button -->
                 <Button Text="Continue With Google"
-                TextColor="black"
+                TextColor="#ffa5d0"
                 FontSize="14"
                 FontFamily= "DynaPuff"
                 BackgroundColor="Transparent"
@@ -156,12 +157,13 @@
                 ImageSource="ggicon.png"
                 ContentLayout="Left, 10"
                 Command="{Binding GoogleLoginCommand}"
-                BorderColor="#3b5998"
+                BorderWidth="1"
+BorderColor="#ffa74c"
                 CornerRadius="25" />
 
                 <!-- Continue with X Button -->
                 <Button Text="Continue With X"
-                TextColor="black"
+                TextColor="#ffa5d0"
                 FontSize="14"
                 FontFamily= "DynaPuff" 
                 BackgroundColor="Transparent"
@@ -170,7 +172,8 @@
                 ImageSource="xicon.png"
                 ContentLayout="Left, 10"
                 Command="{Binding XLoginCommand}"
-                BorderColor="#3b5998"
+                BorderWidth="1"
+BorderColor="#ffa74c"
                 CornerRadius="25" />
 
                 <!-- Separator -->

@@ -31,61 +31,67 @@
                             SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Gray" Padding="10" Margin="5" BackgroundColor="#fffdef">
+                        <Frame BorderColor="#ffa5d0" Padding="10" Margin="5" BackgroundColor="#fffdef">
                             <VerticalStackLayout>
                                 <!-- Label for Booking ID -->
                                 <Label Text="Booking ID:"
-                                       FontSize="14"
+                                       FontSize="16"
+                                       FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding Id}"
-                                       FontSize="16"
-                                       TextColor="Black" />
+                                       FontSize="14"
+                                       TextColor="Gray" />
 
                                 <!-- Label for User Name -->
                                 <Label Text="User Name:"
-                                       FontSize="14"
+                                       FontSize="16"
+FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding UserName}"
-                                       FontSize="16"
-                                       TextColor="Black" />
+                                       FontSize="14"
+TextColor="Gray" />
 
                                 <!-- Label for Facility Name -->
                                 <Label Text="Facility Name:"
-                                       FontSize="14"
+                                       FontSize="16"
+FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding FacilityName}"
                                        FontSize="14"
-                                       TextColor="Black" />
+TextColor="Gray" />
 
                                 <!-- Label for Date -->
                                 <Label Text="Booking Date:"
-                                       FontSize="14"
+                                       FontSize="16"
+FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding Date, StringFormat='{0:MMM dd, yyyy}'}"
                                        FontSize="14"
-                                       TextColor="Black" />
+TextColor="Gray" />
 
                                 <!-- Label for Time Slot -->
                                 <Label Text="Time Slot:"
-                                       FontSize="14"
+                                       FontSize="16"
+FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding Time}"
-                                       FontSize="12"
-                                       TextColor="Black" />
+                                       FontSize="14"
+TextColor="Gray" />
 
                                 <!-- Label for Status -->
                                 <Label Text="Status:"
-                                       FontSize="14"
+                                       FontSize="16"
+FontFamily="DynaPuff"
                                        FontAttributes="Bold"
                                        TextColor="#ffa74c" />
                                 <Label Text="{Binding Status}"
-                                       FontSize="12"
-                                       TextColor="Black" />
+                                       FontSize="14"
+TextColor="Gray" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>

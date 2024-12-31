@@ -30,8 +30,7 @@
             HorizontalOptions="Center" />
 
             <!-- Username Entry with Border -->
-            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
-                <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            
                     <Entry 
                     x:Name="UsernameEntry"
                     Placeholder="Username"
@@ -43,8 +42,7 @@
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"
                     Text="{Binding User.Username}" />
-                </Grid>
-            </Border>
+                
 
             <Label Text="Required: 1-20 characters. " 
                FontSize="12"
@@ -52,8 +50,7 @@
                HorizontalOptions="Start"/>
 
             <!-- Email Entry with Border -->
-            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
-                <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            
                     <Entry 
                     x:Name="EmailEntry"
                     Placeholder="Email"
@@ -65,8 +62,7 @@
                     Text="{Binding User.Email}"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"/>
-                </Grid>
-            </Border>
+              
 
             <Label Text="Required: Valid email format."
                FontSize="12"
@@ -74,8 +70,7 @@
                HorizontalOptions="Start"/>
 
             <!-- Password Entry with Border -->
-            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
-                <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            
                     <Entry 
                     x:Name="PasswordEntry"
                     Placeholder="Password"
@@ -88,8 +83,7 @@
                     HeightRequest="40"
                     HorizontalOptions="FillAndExpand"
                     Text="{Binding User.Password}"/>
-                </Grid>
-            </Border>
+              
 
 
             <Label Text="Required:Min 6 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special character."
@@ -98,8 +92,7 @@
                HorizontalOptions="Start"/>
 
             <!-- Confirm Password Entry with Border -->
-            <Border Stroke="#ffa74c" StrokeThickness="1" StrokeShape="RoundRectangle 8">
-                <Grid Padding="10,0" HeightRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            
                     <Entry 
                     x:Name="ConfirmPasswordEntry"
                     Placeholder="Confirm Password"
@@ -112,8 +105,7 @@
                     HeightRequest="40"
                     HorizontalOptions="FillAndExpand"
                     Text="{Binding User.ConfirmPassword}"/>
-                </Grid>
-            </Border>
+            
 
             <Label Text="Required: Must match password."
                FontSize="12"
@@ -125,7 +117,7 @@
             x:Name="SignUpButton"
             Text="Sign Up"
             FontSize="20"
-            FontFamily="Roboto"
+            FontFamily= "DynaPuff"
             TextColor="White"
             Command="{Binding SignUpCommand}"
             HeightRequest="50"
@@ -144,7 +136,7 @@
             Text="Already have an account?"
             FontSize="14"
             FontFamily= "DynaPuff"
-TextColor="#ffa5d0"
+TextColor="#ffa74c"
             HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
@@ -168,7 +160,7 @@ TextColor="#ffa74c"
 
                 <!-- Sign Up with Facebook Button -->
                 <Button Text="Sign Up With Facebook"
-                    TextColor="Black"
+                    TextColor="#ffa5d0"
                     FontSize="14"
                     FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
@@ -177,12 +169,13 @@ TextColor="#ffa74c"
                     ImageSource="fbicon.png"
                     ContentLayout="Left, 10"
                     Command="{Binding FacebookSignUpCommand}"
-                    BorderColor="#3b5998"
+                    BorderWidth="1"
+BorderColor="#ffa74c"
                     CornerRadius="25"/>
 
                 <!-- Sign Up with Google Button -->
                 <Button Text="Sign Up With Google"
-                    TextColor="Black"
+                    TextColor="#ffa5d0"
                     FontSize="14"
                     FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
@@ -191,12 +184,13 @@ TextColor="#ffa74c"
                     ImageSource="ggicon.png"
                     ContentLayout="Left, 10"
                     Command="{Binding GoogleSignUpCommand}"
-                    BorderColor="#3b5998"
+                    BorderWidth="1"
+BorderColor="#ffa74c"
                     CornerRadius="25" />
 
                 <!-- Sign Up with Apple Button -->
                 <Button Text="Sign Up With X"
-                    TextColor="Black"
+                    TextColor="#ffa5d0"
                     FontSize="14"
                     FontFamily= "DynaPuff"
                     BackgroundColor="Transparent"
@@ -205,7 +199,8 @@ TextColor="#ffa74c"
                     ImageSource="xicon.png"
                     ContentLayout="Left, 10"
                     Command="{Binding XSignUpCommand}"
-                    BorderColor="#3b5998"
+                    BorderWidth="1"
+BorderColor="#ffa74c"
                     CornerRadius="25"/>
             </HorizontalStackLayout>
 
