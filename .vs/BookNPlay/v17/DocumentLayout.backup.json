@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\bookingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,55 +57,46 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FacilityListingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAuwEoAAAARAAAAAAAAAA==",
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDQAAACBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T05:12:53.04Z",
+              "WhenOpened": "2025-01-01T06:06:17.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookingPage.xaml",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingPage.xaml",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml",
-              "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFgAAAAhAAAAAAAAAA==",
+              "Title": "FacilityListingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "RelativeDocumentMoniker": "BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml*",
+              "RelativeToolTip": "BookNPlay\\Pages\\FacilityListingPage.xaml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-01T05:06:37.141Z",
+              "WhenOpened": "2025-01-01T05:35:22.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookingPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "RelativeToolTip": "BookNPlay\\Pages\\BookingPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "FacilityListingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "RelativeToolTip": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T05:00:04.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\BookingViewModel.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwDIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T03:53:25.26Z",
+              "WhenOpened": "2025-01-01T05:35:19.137Z",
               "EditorCaption": ""
             }
           ]

@@ -1,6 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\MauiInfo.plist" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\apicon.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\badminton.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\basketball.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\bnp.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\bnplogo.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\fbicon.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\football.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\ggicon.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\gym.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\netball.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\snooker.png" />
+    <BundleResource Include="C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\xicon.png" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\DynaPuff-Medium.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\Font Awesome 6 Brands-Regular-400.otf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\Font Awesome 6 Free-Regular-400.otf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\Font Awesome 6 Free-Solid-900.otf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
   </ItemGroup>
 </Project>

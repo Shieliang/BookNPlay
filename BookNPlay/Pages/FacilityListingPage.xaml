@@ -11,7 +11,7 @@
     </ContentPage.BindingContext>
 
     <!-- Toolbar -->
-    <ContentPage.ToolbarItems>
+    <ContentPage.ToolbarItems> 
         <ToolbarItem Text="Dashboard"
                  Command="{Binding NavigateToDashboardCommand}" />
     </ContentPage.ToolbarItems>
