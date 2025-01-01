@@ -29,15 +29,15 @@ namespace BookNPlay.ViewModels
 
         private async Task OnResetPassword()
         {
-            if (string.IsNullOrWhiteSpace(email))
-            {
-                feedback = "Email is required.";
-                feedbackColor = Colors.Red;
-                return;
-            }
+            try{
 
-            try
-            {
+                if (string.IsNullOrWhiteSpace(email))
+                {
+                    feedback = "Email is required.";
+                    feedbackColor = Colors.Red;
+                    return;
+                }
+
                 // Send password reset request logic (similar to previous example)
                 var client = new HttpClient();
                 var requestBody = new FormUrlEncodedContent(new[]
@@ -52,19 +52,19 @@ namespace BookNPlay.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
-                    FeedbackColor = Colors.Green;
-                    Feedback = "A password reset email has been sent!";
+                    feedbackColor = Colors.Green;
+                    feedback = "A password reset email has been sent!";
                 }
                 else
                 {
-                    FeedbackColor = Colors.Red;
-                    Feedback = "Failed to send reset email. Please try again.";
+                    feedbackColor = Colors.Red;
+                    feedback = "Failed to send reset email. Please try again.";
                 }
             }
             catch (Exception ex)
             {
-                FeedbackColor = Colors.Red;
-                Feedback = $"An error occurred: {ex.Message}";
+                feedbackColor = Colors.Red;
+                feedback = $"An error occurred: {ex.Message}";
             }
         }
         private async void ExecuteNavigateToLogin()

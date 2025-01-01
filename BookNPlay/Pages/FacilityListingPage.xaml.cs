@@ -8,6 +8,5 @@ public partial class FacilityListingPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
-		viewModel.LoadFacilitiesCommand.Execute(null);
 	}
 }

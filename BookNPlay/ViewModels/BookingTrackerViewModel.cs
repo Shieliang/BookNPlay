@@ -16,7 +16,7 @@ namespace BookNPlay.ViewModels
         public BookingTrackerViewModel()
         {
             // MongoDB connection setup
-            var client = new MongoClient("mongodb+srv://shieliang22:shieliang2002@booknplay.vtags.mongodb.net/?retryWrites=true&w=majority&appName=BookNPlay");
+            var client = new MongoClient("mongodb://shieliang22:shieliang2002@booknplay-shard-00-00.vtags.mongodb.net:27017,booknplay-shard-00-01.vtags.mongodb.net:27017,booknplay-shard-00-02.vtags.mongodb.net:27017/?ssl=true&replicaSet=atlas-11ooyb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=BookNPlay");
             var database = client.GetDatabase("BookingDB");
             _bookingCollection = database.GetCollection<BookingModel>("Booking");
             NavigateToDashboardCommand = new Command(ExecuteNavigateToDashboard);

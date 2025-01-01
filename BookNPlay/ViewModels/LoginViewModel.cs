@@ -56,16 +56,15 @@ namespace BookNPlay.ViewModels
         // Login logic
         private async Task OnLogin()
         {
-            // Validate email and password
-            if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
-            {
-                Feedback = "Email and Password are required.";
-                FeedbackColor = Colors.Red;
-                return;
-            }
+            try{
+                // Validate email and password
+                if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
+                {
+                    Feedback = "Email and Password are required.";
+                    FeedbackColor = Colors.Red;
+                    return;
+                }
 
-            try
-            {
                 // Use HttpClient to send a request to Auth0's /oauth/token endpoint
                 var client = new HttpClient();
                 var requestBody = new FormUrlEncodedContent(new[]

@@ -5,11 +5,8 @@
              xmlns:vm="clr-namespace:BookNPlay.ViewModels"
              Title="Booking Page"
              BackgroundColor="#fffdef">
-    <ContentPage.BindingContext>
-        <vm:BookingViewModel />
-    </ContentPage.BindingContext>
 
-  
+
 
     <ScrollView>
 
@@ -46,7 +43,7 @@ Margin="10,0"/>
 
             <Entry Placeholder="Enter Student ID"
                    Text="{Binding StudentId}"
-                   Keyboard="Numeric"
+                   Keyboard="Text"
                                       BackgroundColor="#fffdef" 
 TextColor="#000000"
 PlaceholderColor="#ffa5d0"

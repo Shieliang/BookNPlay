@@ -9,6 +9,8 @@ using BookNPlay.Models;
 using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics;
 using System.Windows.Input;
+using MongoDB.Bson;
+using BookNPlay.Pages;
 
 namespace BookNPlay.ViewModels
 {
@@ -20,18 +22,42 @@ namespace BookNPlay.ViewModels
         public IRelayCommand<FacilityListingModel> BookFacilityCommand { get; }
         public ICommand NavigateToDashboardCommand { get; }
         public FacilityListingViewModel() {
-            // Initialize MongoDB connection directly here
-            _facilityCollection = InitializeMongoConnection();
-            // Command to load facilities
-            LoadFacilitiesCommand = new AsyncRelayCommand(LoadFacilitiesAsync);
-            BookFacilityCommand = new RelayCommand<FacilityListingModel>(OnBookFacility);
-            NavigateToDashboardCommand = new Command(ExecuteNavigateToDashboard);
+            try
+            {
+                // Initialize MongoDB connection directly here
+                _facilityCollection = InitializeMongoConnection();
+                // Command to load facilities
+                LoadFacilitiesCommand = new AsyncRelayCommand(LoadFacilitiesAsync);
+                BookFacilityCommand = new RelayCommand<FacilityListingModel>(OnBookFacility);
+                NavigateToDashboardCommand = new Command(ExecuteNavigateToDashboard);
+                LoadFacilitiesAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
         private IMongoCollection<FacilityListingModel> InitializeMongoConnection()
         {
-            var client = new MongoClient("mongodb+srv://shieliang22:shieliang2002@booknplay.vtags.mongodb.net/?retryWrites=true&w=majority&appName=BookNPlay");
-            var database = client.GetDatabase("FacilityDB");
-            return database.GetCollection<FacilityListingModel>("Facility");
+            const string connectionUri = "mongodb://shieliang22:shieliang2002@booknplay-shard-00-00.vtags.mongodb.net:27017,booknplay-shard-00-01.vtags.mongodb.net:27017,booknplay-shard-00-02.vtags.mongodb.net:27017/?ssl=true&replicaSet=atlas-11ooyb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=BookNPlay";
+
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            // Set the ServerApi field of the settings object to set the version of the Stable API on the client
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            // Create a new client and connect to the server
+            var client = new MongoClient(settings);
+            // Send a ping to confirm a successful connection
+            try
+            {
+                var database = client.GetDatabase("FacilityDB");
+   
+                return database.GetCollection<FacilityListingModel>("Facility");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return null;
+            }
         }
 
         private async Task LoadFacilitiesAsync()
@@ -67,19 +93,9 @@ namespace BookNPlay.ViewModels
             {
                 try
                 {
-                    // Example: Navigate to Booking Page and pass selected facility as parameter
-                    var viewModel = new BookingViewModel
-                    {
-                        // Set the selected facility details for booking
-                        Facility_Name = facility.FacilityName,
-                        Facility_Id = facility.Id.ToString(),
-                    };
 
-                    // Bind the ViewModel to the page (if you are using MVVM)
-                    var bookingPage = new BookNPlay.Pages.BookingPage(viewModel);
-
-                    // Navigate to the BookingPage
-                    await App.Current.MainPage.Navigation.PushAsync(bookingPage);
+                    // Navigate to the BookingPage and pass the facilityId and facilityName as query parameters
+                    await Shell.Current.GoToAsync($"///BookingPage?Facility_Id={facility.Id}&Facility_Name={facility.FacilityName}");
                 }
                 catch (Exception ex)
                 {

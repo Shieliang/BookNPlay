@@ -6,9 +6,6 @@ C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\com.com
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\com.companyname.booknplay-Signed.aab
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\com.companyname.booknplay-Signed.apk
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\com.companyname.booknplay-Signed.apk.idsig
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\build.props
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\adb.props
@@ -113,7 +110,6 @@ C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPl
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.AssemblyInfo.cs
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.csproj.CoreCompileInputs.cache
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\XamlC.stamp
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.csproj.Up2Date
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.pdb
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.genruntimeconfig.cache
@@ -173,7 +169,6 @@ C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.IdentityModel.Tokens.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Compatibility.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.dll
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.pdb
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.pdb
@@ -185,8 +180,6 @@ C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.pdb
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.Core.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.dll
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Primitives.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Registry.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Mono.Android.dll
@@ -1066,3 +1059,35 @@ C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\lp\158\
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Auth0.OidcClient.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll
 C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\src\crc644c79a3979fa9e697\WebAuthenticationCallbackActivity.java
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\f\DynaPuff-Medium.ttf
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\f\Font Awesome 6 Brands-Regular-400.otf
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\f\Font Awesome 6 Free-Regular-400.otf
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\f\Font Awesome 6 Free-Solid-900.otf
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\apicon.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\badminton.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\basketball.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\bnp.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\bnplogo.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\fbicon.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\football.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\ggicon.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\gym.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\netball.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\snooker.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\resizetizer\r\drawable\xicon.png
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.sourcelink.json
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\DnsClient.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\JWT.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\JWT.pdb
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\MongoDB.Bson.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\MongoDB.Driver.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\SharpCompress.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Snappier.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\ZstdSharp.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\BookNPlay.csproj.Up2Date
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\shiel\source\repos\BookNPlay\BookNPlay\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll

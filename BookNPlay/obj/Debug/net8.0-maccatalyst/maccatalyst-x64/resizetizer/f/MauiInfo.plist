@@ -4,9 +4,11 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
+	<string>DynaPuff-Medium.ttf</string>
 	<string>Font Awesome 6 Brands-Regular-400.otf</string>
 	<string>Font Awesome 6 Free-Regular-400.otf</string>
 	<string>Font Awesome 6 Free-Solid-900.otf</string>
+	<string>MauiInfo.plist</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
   </array>

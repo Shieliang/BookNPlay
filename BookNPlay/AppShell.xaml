@@ -28,12 +28,17 @@
     Route="FacilityListingPage"/>
 
     <ShellContent
+    Title="Booking"
+    ContentTemplate="{DataTemplate local:BookingPage}"
+    Route="BookingPage"/>
+
+    <ShellContent
     Title="Booking Tracker"
     ContentTemplate="{DataTemplate local:BookingTrackerPage}"
     Route="BookingTrackerPage"/>
     
     <ShellContent
-     Title="Booking Tracker"
+     Title="Reset Password"
      ContentTemplate="{DataTemplate local:ResetPasswordPage}"
      Route="ResetPasswordPage"/>
 

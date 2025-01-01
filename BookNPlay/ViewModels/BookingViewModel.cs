@@ -10,17 +10,20 @@ using BookNPlay.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using MongoDB.Bson;
+using System.Diagnostics;
 
 namespace BookNPlay.ViewModels
 {
+    [QueryProperty(nameof(Facility_Id), "Facility_Id")]
+    [QueryProperty(nameof(Facility_Name), "Facility_Name")]
     public partial class BookingViewModel:ObservableObject
     {
         // Booking form properties
         [ObservableProperty]
-        private string facility_Name;
+        public string facility_Name;
 
         [ObservableProperty]
-        private string facility_Id;
+        public string facility_Id;
 
         [ObservableProperty]
         private string userName;
@@ -40,7 +43,7 @@ namespace BookNPlay.ViewModels
         private string phoneNumber;
 
         // Time slots for picker
-        public ObservableCollection<string> BookingTimeSlots { get; set; } = new ObservableCollection<string>();
+        public ObservableCollection<string> BookingTimeSlots { get; set; } = new();
 
         public IRelayCommand SubmitBookingCommand { get; }
         public ICommand NavigateToFacilityListingCommand { get; }
@@ -51,7 +54,13 @@ namespace BookNPlay.ViewModels
             SelectedDate = DateTime.Now;
             SubmitBookingCommand = new RelayCommand(OnSubmitBooking);
             NavigateToFacilityListingCommand = new Command(ExecuteNavigateToFacilityListing);
-            
+            PropertyChanged += (sender, args) =>
+            {
+                if (args.PropertyName == nameof(Facility_Id))
+                {
+                    LoadBookingTimeSlots();
+                }
+            };
         }
 
         private async void OnSubmitBooking()
@@ -75,7 +84,7 @@ namespace BookNPlay.ViewModels
                 };
 
                 // Connect to MongoDB
-                var client = new MongoClient("mongodb+srv://shieliang22:shieliang2002@booknplay.vtags.mongodb.net/?retryWrites=true&w=majority&appName=BookNPlay");
+                var client = new MongoClient("mongodb://shieliang22:shieliang2002@booknplay-shard-00-00.vtags.mongodb.net:27017,booknplay-shard-00-01.vtags.mongodb.net:27017,booknplay-shard-00-02.vtags.mongodb.net:27017/?ssl=true&replicaSet=atlas-11ooyb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=BookNPlay");
                 var database = client.GetDatabase("BookingDB"); // Connect to the BookingDB database
                 var collection = database.GetCollection<BookingModel>("Booking"); // Access the Booking collection
 
@@ -99,7 +108,7 @@ namespace BookNPlay.ViewModels
         {
             try
             {
-                var client = new MongoClient("mongodb+srv://shieliang22:shieliang2002@booknplay.vtags.mongodb.net/?retryWrites=true&w=majority&appName=BookNPlay");
+                var client = new MongoClient("mongodb://shieliang22:shieliang2002@booknplay-shard-00-00.vtags.mongodb.net:27017,booknplay-shard-00-01.vtags.mongodb.net:27017,booknplay-shard-00-02.vtags.mongodb.net:27017/?ssl=true&replicaSet=atlas-11ooyb-shard-0&authSource=admin&retryWrites=true&w=majority&appName=BookNPlay");
                 var database = client.GetDatabase("FacilityDB");
                 var collection = database.GetCollection<FacilityListingModel>("Facility");
 
@@ -119,6 +128,7 @@ namespace BookNPlay.ViewModels
             catch (Exception ex)
             {
                 Console.WriteLine($"Error loading booking time slots: {ex.Message}");
+                Console.WriteLine($"Error loading booking time slots: {facility_Id}");
             }
         }
         private async void ExecuteNavigateToFacilityListing()

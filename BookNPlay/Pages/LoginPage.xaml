@@ -83,7 +83,7 @@
 
                 <!-- Animate the button on click -->
                 <Button.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnLoginButtonTapped"/>
+                    <TapGestureRecognizer Command="{Binding LoginCommand}"  Tapped="OnLoginButtonTapped"/>
                 </Button.GestureRecognizers>
             </Button>
 
@@ -127,9 +127,10 @@
            HorizontalTextAlignment="Center"
            VerticalOptions="Center"
            WidthRequest="40" />
-
+            
+            
             <!-- Social Login Buttons -->
-            <HorizontalStackLayout Spacing="20" Padding="10">
+            <VerticalStackLayout Spacing="20" Padding="10">
 
                 <!-- Continue with Facebook Button -->
                 <Button Text="Continue With Facebook"
@@ -180,7 +181,7 @@ BorderColor="#ffa74c"
                 <BoxView HeightRequest="2"
                 BackgroundColor="White"
                 HorizontalOptions="FillAndExpand" />
-            </HorizontalStackLayout>
+            </VerticalStackLayout>
 
             <!-- Feedback Label -->
             <Label
