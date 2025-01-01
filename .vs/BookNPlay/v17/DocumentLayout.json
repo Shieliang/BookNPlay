@@ -69,6 +69,10 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginPage.xaml",
@@ -78,12 +82,7 @@
               "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAEYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-01T14:34:43.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
+              "WhenOpened": "2025-01-01T14:34:43.282Z"
             },
             {
               "$type": "Document",
@@ -93,7 +92,7 @@
               "RelativeDocumentMoniker": "BookNPlay\\Pages\\Dashboard.xaml",
               "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
               "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-01T14:02:29.523Z",
               "EditorCaption": ""
