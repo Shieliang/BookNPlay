@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\",
+  "WorkspaceRootPath": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\pages\\facilitylistingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\shiel\\source\\repos\\booknplay\\booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|c:\\users\\michelle\\source\\repos\\shieliang\\booknplay\\booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3BB249-0513-4BBE-BCF5-7D4801ACE97F}|BookNPlay\\BookNPlay.csproj|solutionrelative:booknplay\\viewmodels\\facilitylistingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -57,47 +69,70 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "BookNPlay\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "BookNPlay\\Pages\\LoginPage.xaml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T14:34:43.282Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
-              "RelativeToolTip": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwDQAAACBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T06:06:17.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FacilityListingPage.xaml",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
-              "RelativeDocumentMoniker": "BookNPlay\\Pages\\FacilityListingPage.xaml",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
-              "RelativeToolTip": "BookNPlay\\Pages\\FacilityListingPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "BookNPlay\\Pages\\Dashboard.xaml",
+              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\Dashboard.xaml",
+              "RelativeToolTip": "BookNPlay\\Pages\\Dashboard.xaml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-01T05:35:22.217Z",
+              "WhenOpened": "2025-01-01T14:02:29.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "BookNPlay\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T06:06:17.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FacilityListingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "RelativeDocumentMoniker": "BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "RelativeToolTip": "BookNPlay\\Pages\\FacilityListingPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T05:35:22.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FacilityListingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
               "RelativeDocumentMoniker": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
-              "ToolTip": "C:\\Users\\shiel\\source\\repos\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
+              "ToolTip": "C:\\Users\\Michelle\\source\\repos\\Shieliang\\BookNPlay\\BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
               "RelativeToolTip": "BookNPlay\\ViewModels\\FacilityListingViewModel.cs",
               "ViewState": "AgIAABAAAAAAAAAAAADwvxYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T05:35:19.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-01T05:35:19.137Z"
             }
           ]
         }
